@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 4b6cdd4ded2e34c55891b74d5cb228b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8995291724454663776
+    second: crate_mid_new_01
+  - first:
+      213: -1970493285509448896
+    second: crate_big_new_01
+  - first:
+      213: 738073821413724937
+    second: barrel_new_01
+  - first:
+      213: 3180214135904708776
+    second: chest_new_01
+  - first:
+      213: -3865295871730067239
+    second: chest_new_02
+  - first:
+      213: -5154359418018120236
+    second: chest_new_03
+  - first:
+      213: 4774178399813136172
+    second: umbrella_01
+  - first:
+      213: 2126117900555061571
+    second: monitor
+  - first:
+      213: -5647100804131506117
+    second: logo_01
+  - first:
+      213: -5633597006401789295
+    second: sunsafe_01
+  - first:
+      213: -919975304990126268
+    second: sunsafe_02
+  - first:
+      213: 6383784832900289940
+    second: chest_new_04
+  - first:
+      213: 4817470004142483824
+    second: crate_cracked_broken_01
+  - first:
+      213: 5663095707997021039
+    second: barrel_cracked_01
+  - first:
+      213: -3009950408943126444
+    second: chest_cracked_01
+  - first:
+      213: 8356489027695427110
+    second: monitor_01
+  - first:
+      213: 4113328582212853317
+    second: monitor_02
+  - first:
+      213: 1666734907885953024
+    second: key_01
+  - first:
+      213: 7292370541946186415
+    second: sunsafe_03
+  - first:
+      213: -1618052046232090430
+    second: sunsafe_04
+  - first:
+      213: 514213489700712258
+    second: crate_mid_broken_01
+  - first:
+      213: 4486112730902338002
+    second: ball_01
+  - first:
+      213: 6834239357244731461
+    second: beach_table_01
+  - first:
+      213: 1543652627145027736
+    second: bucket_01
+  - first:
+      213: 4596219430777913765
+    second: wall_crystall_new
+  - first:
+      213: 2678364459251801090
+    second: lamp_holder
+  - first:
+      213: -125890383814587562
+    second: sunsafe_05
+  - first:
+      213: -5965963260551074440
+    second: sunsafe_06
+  - first:
+      213: -4921299990954243412
+    second: valve_01
+  - first:
+      213: -555595783138451722
+    second: wall_crystall_back
+  - first:
+      213: 6991100011698984472
+    second: lock_holder
+  - first:
+      213: 1620459737972833058
+    second: energy_crystal_01
+  - first:
+      213: 7606725446535330075
+    second: crate_big_broken_01
+  - first:
+      213: 1287364397179642150
+    second: bulb_new
+  - first:
+      213: 970052165855153241
+    second: bulb_brocken
+  - first:
+      213: 588476853568896567
+    second: lock_lamp
+  - first:
+      213: -560723548763152668
+    second: chest_broken_01
+  - first:
+      213: -1946690189732969298
+    second: coconut_01
+  - first:
+      213: 3993413712352484565
+    second: wall_crystall_brocken
+  - first:
+      213: -5358692985718821265
+    second: decor_crystal_01
+  - first:
+      213: 6484530184281819333
+    second: energy_capsule_top
+  - first:
+      213: -5950269481301202341
+    second: crystal_03
+  - first:
+      213: 5020892342832914252
+    second: barrel_broken_01
+  - first:
+      213: 1333320268158070236
+    second: coconut_02
+  - first:
+      213: 7771561789990123635
+    second: decor_vase_01
+  - first:
+      213: 1209917754893413156
+    second: decor_vase_02
+  - first:
+      213: -7350342219254798906
+    second: decor_crystal_02
+  - first:
+      213: -1725087544796790684
+    second: platform_single
+  - first:
+      213: -1579047398334603499
+    second: door_engine_top
+  - first:
+      213: -1587383461491770697
+    second: crystal_01
+  - first:
+      213: 8511752746308885891
+    second: energy_capsule_bottom
+  - first:
+      213: 1448676291052679974
+    second: crystal_02
+  - first:
+      213: 3346450664533449178
+    second: crystal_04
+  - first:
+      213: -8685628342626665277
+    second: crystal_05
+  - first:
+      213: 1964292886959753311
+    second: door_engine_bottom
+  - first:
+      213: 4261642199329028121
+    second: key_gray
+  - first:
+      213: -6802099964484730007
+    second: key_red
+  - first:
+      213: -5452950253984635754
+    second: key_green
+  - first:
+      213: -801629591567567398
+    second: key_blue
+  - first:
+      213: -5355257547375445562
+    second: key_yellow
+  - first:
+      213: 9084854405495044593
+    second: Light_galo_medium
+  - first:
+      213: -1243789252498652778
+    second: Light_galo_small
+  - first:
+      213: -4415585193135429981
+    second: Light_galo_big
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crate_mid_new_01
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 173
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a96ed0f5dd4a2380800000000000000
+      internalID: -8995291724454663776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crate_big_new_01
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 173
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bbae40cc667a4e0800000000000000
+      internalID: -1970493285509448896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrel_new_01
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 173
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9035167ea3a2e3a00800000000000000
+      internalID: 738073821413724937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_new_01
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 173
+        width: 48
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8a64838e3622c20800000000000000
+      internalID: 3180214135904708776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_new_02
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 173
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8deb542e5bb5ac0800000000000000
+      internalID: -3865295871730067239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_new_03
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 173
+        width: 48
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd37541b690878b0800000000000000
+      internalID: -5154359418018120236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: umbrella_01
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 140
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f643fb5f9414240800000000000000
+      internalID: 4774178399813136172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monitor
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 173
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3490f2547fc718d10800000000000000
+      internalID: 2126117900555061571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_01
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 189
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192a7b9ee5171d1b0800000000000000
+      internalID: -5633597006401789295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_02
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 189
+        width: 74
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f8ee795579b33f0800000000000000
+      internalID: -919975304990126268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_new_04
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 173
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955c879b72c79850800000000000000
+      internalID: 6383784832900289940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crate_cracked_broken_01
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 109
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0792309d1771bd240800000000000000
+      internalID: 4817470004142483824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrel_cracked_01
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 109
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63a334ca8b579e40800000000000000
+      internalID: 5663095707997021039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_cracked_01
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 109
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458376bec028a36d0800000000000000
+      internalID: -3009950408943126444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monitor_01
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 125
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e3c310f7638f370800000000000000
+      internalID: 8356489027695427110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monitor_02
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 125
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e124b5d8a751930800000000000000
+      internalID: 4113328582212853317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_03
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 133
+        width: 70
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaa93b0f54b33560800000000000000
+      internalID: 7292370541946186415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_04
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 137
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c80e3c9c368b89e0800000000000000
+      internalID: -1618052046232090430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crate_mid_broken_01
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 109
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f2358c17ad22700800000000000000
+      internalID: 514213489700712258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ball_01
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 93
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d99ac3a2cfd14e30800000000000000
+      internalID: 4486112730902338002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beach_table_01
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 93
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540f09e6c7818de50800000000000000
+      internalID: 6834239357244731461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bucket_01
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 93
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890f391c2e72c6510800000000000000
+      internalID: 1543652627145027736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp_holder
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 93
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c1cbcf8467b2520800000000000000
+      internalID: 2678364459251801090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_05
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 102
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b0818ec5fb04ef0800000000000000
+      internalID: -125890383814587562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sunsafe_06
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 103
+        width: 70
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d62d70604a43da0800000000000000
+      internalID: -5965963260551074440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: valve_01
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 95
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa0a0e7bb704bbb0800000000000000
+      internalID: -4921299990954243412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_crystall_back
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 77
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fed35334902a48f0800000000000000
+      internalID: -555595783138451722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lock_holder
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 91
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8161c829b60650160800000000000000
+      internalID: 6991100011698984472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energy_crystal_01
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 29
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b71becb870d7610800000000000000
+      internalID: 1620459737972833058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crate_big_broken_01
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 45
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19b9a0dd74809960800000000000000
+      internalID: 7606725446535330075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_new
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 73
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621a0663913add110800000000000000
+      internalID: 1287364397179642150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_brocken
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 76
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c05672e41567d00800000000000000
+      internalID: 970052165855153241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lock_lamp
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 86
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e73879490ba2800800000000000000
+      internalID: 588476853568896567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest_broken_01
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 45
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee96ca37e8e738f0800000000000000
+      internalID: -560723548763152668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coconut_01
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 66
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea48a312697fbf4e0800000000000000
+      internalID: -1946690189732969298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_crystal_01
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 45
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e2addfe1912a5b0800000000000000
+      internalID: -5358692985718821265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energy_capsule_top
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 52
+        width: 57
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c88a6998ddadf950800000000000000
+      internalID: 6484530184281819333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_03
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 55
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aa131ce656c6da0800000000000000
+      internalID: -5950269481301202341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barrel_broken_01
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 45
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd806ebfacda540800000000000000
+      internalID: 5020892342832914252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: coconut_02
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 45
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdde36b38b7e08210800000000000000
+      internalID: 1333320268158070236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_vase_01
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 45
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3783c52c5422adb60800000000000000
+      internalID: 7771561789990123635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_vase_02
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 45
+        width: 8
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b2cd3a9cd7ac010800000000000000
+      internalID: 1209917754893413156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decor_crystal_02
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 45
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5e2c302b65ef990800000000000000
+      internalID: -7350342219254798906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platform_single
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 34
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460cfe594024f08e0800000000000000
+      internalID: -1725087544796790684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_01
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 54
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baf37fe62b78f9e0800000000000000
+      internalID: -1587383461491770697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: energy_capsule_bottom
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 29
+        width: 57
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d52bb8602df1670800000000000000
+      internalID: 8511752746308885891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_02
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 29
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623b9ba496bba1410800000000000000
+      internalID: 1448676291052679974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_04
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 29
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9d2ed262bf07e20800000000000000
+      internalID: 3346450664533449178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal_05
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 29
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc3ca27a03767780800000000000000
+      internalID: -8685628342626665277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_crystall_new
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 93
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a10441783d09cf30800000000000000
+      internalID: 4596219430777913765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_crystall_brocken
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 75
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc91f50d947b6730800000000000000
+      internalID: 3993413712352484565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_engine_top
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 45
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd2c2e1c8161ae0800000000000000
+      internalID: -1579047398334603499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_engine_bottom
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 29
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58001239f1924b10800000000000000
+      internalID: 1964292886959753311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_gray
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91832da4005642b30800000000000000
+      internalID: 4261642199329028121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_red
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963c0321f161a91a0800000000000000
+      internalID: -6802099964484730007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_green
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694ae5d82aa3354b0800000000000000
+      internalID: -5452950253984635754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_blue
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad57c29322a00e4f0800000000000000
+      internalID: -801629591567567398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: key_yellow
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 61
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9f4ff42ad4ea5b0800000000000000
+      internalID: -5355257547375445562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_galo_medium
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 147
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9bcabb2f2e31e70800000000000000
+      internalID: 9084854405495044593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_galo_small
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 113
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6918e55c34c2dbee0800000000000000
+      internalID: -1243789252498652778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light_galo_big
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 108
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a620bf59a0b8b2c0800000000000000
+      internalID: -4415585193135429981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Light_galo_big: -4415585193135429981
+      Light_galo_medium: 9084854405495044593
+      Light_galo_small: -1243789252498652778
+      ball_01: 4486112730902338002
+      barrel_broken_01: 5020892342832914252
+      barrel_cracked_01: 5663095707997021039
+      barrel_new_01: 738073821413724937
+      beach_table_01: 6834239357244731461
+      bucket_01: 1543652627145027736
+      bulb_brocken: 970052165855153241
+      bulb_new: 1287364397179642150
+      chest_broken_01: -560723548763152668
+      chest_cracked_01: -3009950408943126444
+      chest_new_01: 3180214135904708776
+      chest_new_02: -3865295871730067239
+      chest_new_03: -5154359418018120236
+      chest_new_04: 6383784832900289940
+      coconut_01: -1946690189732969298
+      coconut_02: 1333320268158070236
+      crate_big_broken_01: 7606725446535330075
+      crate_big_new_01: -1970493285509448896
+      crate_cracked_broken_01: 4817470004142483824
+      crate_mid_broken_01: 514213489700712258
+      crate_mid_new_01: -8995291724454663776
+      crystal_01: -1587383461491770697
+      crystal_02: 1448676291052679974
+      crystal_03: -5950269481301202341
+      crystal_04: 3346450664533449178
+      crystal_05: -8685628342626665277
+      decor_crystal_01: -5358692985718821265
+      decor_crystal_02: -7350342219254798906
+      decor_vase_01: 7771561789990123635
+      decor_vase_02: 1209917754893413156
+      door_engine_bottom: 1964292886959753311
+      door_engine_top: -1579047398334603499
+      energy_capsule_bottom: 8511752746308885891
+      energy_capsule_top: 6484530184281819333
+      energy_crystal_01: 1620459737972833058
+      key_blue: -801629591567567398
+      key_gray: 4261642199329028121
+      key_green: -5452950253984635754
+      key_red: -6802099964484730007
+      key_yellow: -5355257547375445562
+      lamp_holder: 2678364459251801090
+      lock_holder: 6991100011698984472
+      lock_lamp: 588476853568896567
+      monitor: 2126117900555061571
+      monitor_01: 8356489027695427110
+      monitor_02: 4113328582212853317
+      platform_single: -1725087544796790684
+      sunsafe_01: -5633597006401789295
+      sunsafe_02: -919975304990126268
+      sunsafe_03: 7292370541946186415
+      sunsafe_04: -1618052046232090430
+      sunsafe_05: -125890383814587562
+      sunsafe_06: -5965963260551074440
+      umbrella_01: 4774178399813136172
+      valve_01: -4921299990954243412
+      wall_crystall_back: -555595783138451722
+      wall_crystall_brocken: 3993413712352484565
+      wall_crystall_new: 4596219430777913765
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

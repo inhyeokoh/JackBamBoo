@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: 68118f9b8ad30234d9f1749a377b703b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9025239467103566888
+    second: TX Village House - Shadow - Roof 6X4
+  - first:
+      213: 609732709448556815
+    second: TX Village House - Shadow - Roof 3X2
+  - first:
+      213: 6033941354656986862
+    second: TX Village House - Shadow - Roof 3X2 S
+  - first:
+      213: -2721198482178416932
+    second: TX Village House - Shadow - Roof 6X2
+  - first:
+      213: 604398300112884243
+    second: TX Village House - Shadow - Roof 3X4
+  - first:
+      213: -2434634160075315138
+    second: TX Village House - Shadow - Roof Window Side
+  - first:
+      213: -9219568461284137960
+    second: TX Village House - Shadow - Roof Half 3X2
+  - first:
+      213: 8952704976956261600
+    second: TX Village House - Shadow - Roof Shed
+  - first:
+      213: 384873413450652388
+    second: TX Village House - Shadow - Attic Side
+  - first:
+      213: -1409479093068604108
+    second: TX Village House - Shadow - Attic
+  - first:
+      213: -229414511954476485
+    second: TX Village House - Shadow - Attic Roof
+  - first:
+      213: 3163850271955345337
+    second: TX Village House - Shadow - Roof Rainshed X2
+  - first:
+      213: -2821339034788081983
+    second: TX Village House - Shadow - Door A
+  - first:
+      213: 117199836275309320
+    second: TX Village House - Shadow - Gradient Vert
+  - first:
+      213: -5267256672927601139
+    second: TX Village House - Shadow - Square
+  - first:
+      213: -773631043075087996
+    second: TX Village House - Shadow - Tri A
+  - first:
+      213: 3474504232002077677
+    second: TX Village House - Shadow - Tri B
+  - first:
+      213: -8677989431263902788
+    second: TX Village House - Shadow - Tri B Large
+  - first:
+      213: 1897575131284115905
+    second: TX Village House - Shadow - Chimney B
+  - first:
+      213: 6708484015656643540
+    second: TX Village House - Shadow - Pillar Cross
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof 6X4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 407
+        width: 204
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c3b814a77104d70800000000000000
+      internalID: 9025239467103566888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof 3X2
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 454
+        width: 110
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f012e923ba4367800800000000000000
+      internalID: 609732709448556815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof 3X2 S
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 460
+        width: 100
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee67edf51bddcb350800000000000000
+      internalID: 6033941354656986862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof 6X2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 354
+        width: 204
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde5c62e56c5c3ad0800000000000000
+      internalID: -2721198482178416932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof 3X4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 334
+        width: 110
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312141d3d01436800800000000000000
+      internalID: 604398300112884243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof Window Side
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 324
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38eda27121763ed0800000000000000
+      internalID: -2434634160075315138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof Half 3X2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 391
+        width: 104
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814a3c2f4538d0080800000000000000
+      internalID: -9219568461284137960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof Shed
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 344
+        width: 142
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4895a3eb56e3c70800000000000000
+      internalID: 8952704976956261600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Attic Side
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 343
+        width: 66
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead7349458575500800000000000000
+      internalID: 384873413450652388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Attic
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 280
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d5e4b8b36807ce0800000000000000
+      internalID: -1409479093068604108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Attic Roof
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 327
+        width: 40
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3242a487b4f0dcf0800000000000000
+      internalID: -229414511954476485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Roof Rainshed X2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 291
+        width: 77
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfdb6e3f0148eb20800000000000000
+      internalID: 3163850271955345337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Door A
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 35
+        height: 64
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce4380981798d8d0800000000000000
+      internalID: -2821339034788081983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Gradient Vert
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 16
+        height: 255
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7ce051a060a100800000000000000
+      internalID: 117199836275309320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Square
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e285d86f1f6e6b0800000000000000
+      internalID: -5267256672927601139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Tri A
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 19
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4816b4a4aa28345f0800000000000000
+      internalID: -773631043075087996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Tri B
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 41
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de34317b03be73030800000000000000
+      internalID: 3474504232002077677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Chimney B
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 224
+        width: 71
+        height: 96
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c11ec2378a855a10800000000000000
+      internalID: 1897575131284115905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Pillar Cross
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 308
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dba99e4ba2591d50800000000000000
+      internalID: 6708484015656643540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Village House - Shadow - Tri B Large
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 67
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3cbe81796919780800000000000000
+      internalID: -8677989431263902788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TX Village House - Shadow - Roof Shed: 8952704976956261600
+      TX Village House - Shadow - Roof 3X2 S: 6033941354656986862
+      TX Village House - Shadow - Tri A: -773631043075087996
+      TX Village House - Shadow - Roof 3X2: 609732709448556815
+      TX Village House - Shadow - Roof 6X4: 9025239467103566888
+      TX Village House - Shadow - Roof Half 3X2: -9219568461284137960
+      TX Village House - Shadow - Roof Window Side: -2434634160075315138
+      TX Village House - Shadow - Door A: -2821339034788081983
+      TX Village House - Shadow - Chimney B: 1897575131284115905
+      TX Village House - Shadow - Attic Side: 384873413450652388
+      TX Village House - Shadow - Roof 6X2: -2721198482178416932
+      TX Village House - Shadow - Roof Rainshed X2: 3163850271955345337
+      TX Village House - Shadow - Attic: -1409479093068604108
+      TX Village House - Shadow - Gradient Vert: 117199836275309320
+      TX Village House - Shadow - Square: -5267256672927601139
+      TX Village House - Shadow - Attic Roof: -229414511954476485
+      TX Village House - Shadow - Tri B Large: -8677989431263902788
+      TX Village House - Shadow - Roof 3X4: 604398300112884243
+      TX Village House - Shadow - Pillar Cross: 6708484015656643540
+      TX Village House - Shadow - Tri B: 3474504232002077677
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

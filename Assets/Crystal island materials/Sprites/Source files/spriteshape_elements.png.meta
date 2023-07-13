@@ -1,0 +1,2068 @@
+fileFormatVersion: 2
+guid: 08c2aefb429614c319de62b86e65fa2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3163550310128304390
+    second: log_thin_broken_01
+  - first:
+      213: -8733085780848790232
+    second: palm_trunk_03_02
+  - first:
+      213: -8980318243330744454
+    second: ss_sea_back
+  - first:
+      213: -1672297655042689566
+    second: ss_beach
+  - first:
+      213: -8264443977381972491
+    second: ss_grass_high
+  - first:
+      213: -2443753207590776661
+    second: ss_cave_rocks_top
+  - first:
+      213: -6390216442249414997
+    second: log_thick_broken_01
+  - first:
+      213: 2968157368301212332
+    second: palm_trunk_03_01
+  - first:
+      213: 291015167079183187
+    second: ss_grass_plane
+  - first:
+      213: 7824005624520345549
+    second: ss_grass_low
+  - first:
+      213: 5901058319570700362
+    second: bamboo_log_cracked_01_01
+  - first:
+      213: 7257037250584183320
+    second: bamboo_02_02
+  - first:
+      213: 8197270265424323694
+    second: ss_sea_shore
+  - first:
+      213: -3600250462136911233
+    second: bamboo_log_cracked_01_02
+  - first:
+      213: 8913703451369798892
+    second: palm_trunk_02_02
+  - first:
+      213: -3470584578568999690
+    second: rock_wall_p_tl
+  - first:
+      213: -7100016138375809788
+    second: rock_wall_np_tl
+  - first:
+      213: 1909023678011661814
+    second: ss_drain
+  - first:
+      213: 195810333565065450
+    second: ss_vain_01
+  - first:
+      213: -4732132670729466635
+    second: ss_vain_02
+  - first:
+      213: 8443957775460601289
+    second: log_thin_cracked_02
+  - first:
+      213: -737141443823119992
+    second: rock_wall_p_tm
+  - first:
+      213: -9039631914971814530
+    second: ss_door_rail
+  - first:
+      213: 3329208753443999293
+    second: bamboo_02_01
+  - first:
+      213: 7925302279713071865
+    second: ss_door
+  - first:
+      213: -7229095599247356844
+    second: ss_coral_01
+  - first:
+      213: 8161849492238847997
+    second: ss_cave_rocks_bottom
+  - first:
+      213: -7563376266194143583
+    second: log_thick_cracked_02
+  - first:
+      213: -6387185357876555729
+    second: palm_trunk_02_01
+  - first:
+      213: -4358917411060396103
+    second: pipe_sensor
+  - first:
+      213: 8731121380478425087
+    second: ss_wire
+  - first:
+      213: 8647462945308292695
+    second: ss_ladder
+  - first:
+      213: -3208362684979926449
+    second: ss_flying_platform
+  - first:
+      213: 504852446291144852
+    second: bamboo_log_01_01
+  - first:
+      213: -8362687534741598977
+    second: palm_trunk_01_02
+  - first:
+      213: -2436534580101653450
+    second: bamboo_01_02
+  - first:
+      213: 4487685449271978038
+    second: rock_wall_p_tr
+  - first:
+      213: -3269487719789456323
+    second: ss_lamp
+  - first:
+      213: 3563678282415908785
+    second: ss_coral_02
+  - first:
+      213: -9142605245146920329
+    second: bamboo_log_01_02
+  - first:
+      213: -1286183485285272878
+    second: ss_rope_01
+  - first:
+      213: -6714184259643830341
+    second: ss_ladder_broken
+  - first:
+      213: 361203947195174284
+    second: ss_capsule_glass
+  - first:
+      213: -6827444840289698783
+    second: ss_seaweed
+  - first:
+      213: 7670005950297380704
+    second: ss_vain_03
+  - first:
+      213: -1199440356972684948
+    second: ss_vain_04
+  - first:
+      213: 2449522021146303844
+    second: ss_vain_05
+  - first:
+      213: -6785545177909270009
+    second: log_thin_03
+  - first:
+      213: 8689849485602602233
+    second: ss_rope_02
+  - first:
+      213: 6623596044990663129
+    second: palm_trunk_01_01
+  - first:
+      213: 8225882683979921834
+    second: bamboo_01_01
+  - first:
+      213: -6461870546765173481
+    second: ss_chain
+  - first:
+      213: 4187146205332945422
+    second: log_thick_03
+  - first:
+      213: -408284429360043870
+    second: ss_table
+  - first:
+      213: -3375248298793483741
+    second: rock_wall_l
+  - first:
+      213: -6273875102575337003
+    second: rock_wall_r
+  - first:
+      213: -691813186483057233
+    second: rock_wall_np_tr
+  - first:
+      213: 7812495941941588883
+    second: rock_wall_p_br
+  - first:
+      213: -1719498508973277344
+    second: rock_wall_l
+  - first:
+      213: -5655727765906720029
+    second: rock_wall_p_bl
+  - first:
+      213: -1880809494135759745
+    second: rock_wall_np_bl
+  - first:
+      213: 7586716270174738402
+    second: rock_wall_np_br
+  - first:
+      213: -3180609038684046434
+    second: ss_wire_tl
+  - first:
+      213: 4281346587891690681
+    second: ss_wire_tr
+  - first:
+      213: 1167742224922349388
+    second: ss_wire_bl
+  - first:
+      213: -8498906047730560411
+    second: ss_wire_br
+  - first:
+      213: -7701236165859652151
+    second: pipe_startend
+  - first:
+      213: -4045648956991198455
+    second: pipe_circular_t
+  - first:
+      213: 2821645415179974186
+    second: ss_wire_bottom
+  - first:
+      213: -6265935020689808326
+    second: pipe_circular_b
+  - first:
+      213: 2357106345502921453
+    second: pipe_circular_bl
+  - first:
+      213: -1280651157645100313
+    second: pipe_circular_tl
+  - first:
+      213: -7729368447997737111
+    second: pipe_circular_br
+  - first:
+      213: 7362639614158786640
+    second: pipe_circular_tr
+  - first:
+      213: 3974630234570493682
+    second: ss_lamp_broken
+  - first:
+      213: 8731121380478425087
+    second: ss_wire_t
+  - first:
+      213: -6126687506198489467
+    second: rock_wall_r
+  - first:
+      213: -2179768994858883867
+    second: rock_wall_np_tm
+  - first:
+      213: -6273875102575337003
+    second: rock_wall_b
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: log_thin_broken_01
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 322
+        width: 140
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 0, z: 22, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6014640fe3037eb20800000000000000
+      internalID: 3163550310128304390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_03_02
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 304
+        width: 321
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 51, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8253e7f80c8ddc680800000000000000
+      internalID: -8733085780848790232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_sea_back
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 269
+        width: 159
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f9f4033208f5380800000000000000
+      internalID: -8980318243330744454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_beach
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 317
+        width: 142
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e53678942ecac8e0800000000000000
+      internalID: -1672297655042689566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_grass_high
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 261
+        width: 253
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5f70e4dfbce4d80800000000000000
+      internalID: -8264443977381972491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_cave_rocks_top
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 262
+        width: 267
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba094deb76b061ed0800000000000000
+      internalID: -2443753207590776661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: log_thick_broken_01
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 286
+        width: 151
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6fcd9a0046157a0800000000000000
+      internalID: -6390216442249414997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_03_01
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 253
+        width: 324
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca25d078663013920800000000000000
+      internalID: 2968157368301212332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_grass_plane
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 269
+        width: 142
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353710aa0c4e90400800000000000000
+      internalID: 291015167079183187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_grass_low
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 303
+        width: 78
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7813289a3749c60800000000000000
+      internalID: 7824005624520345549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_log_cracked_01_01
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 256
+        width: 126
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 23, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4800e8c645c4e150800000000000000
+      internalID: 5901058319570700362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_02_02
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 228
+        width: 201
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81209d21eec26b460800000000000000
+      internalID: 7257037250584183320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_sea_shore
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 239
+        width: 160
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e642d7a10ed82c170800000000000000
+      internalID: 8197270265424323694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_log_cracked_01_02
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 240
+        width: 131
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 0, z: 23, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ab4e59747590ec0800000000000000
+      internalID: -3600250462136911233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_02_02
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 205
+        width: 321
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 51, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecf11cef06d3bb70800000000000000
+      internalID: 8913703451369798892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_drain
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 242
+        width: 48
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdd1b3bbe63e7a10800000000000000
+      internalID: 1909023678011661814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_vain_01
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 157
+        width: 157
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae81f7ff578a7b200800000000000000
+      internalID: 195810333565065450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_vain_02
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 156
+        width: 122
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc462b6866145eb0800000000000000
+      internalID: -4732132670729466635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: log_thin_cracked_02
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 211
+        width: 151
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 17, y: 0, z: 22, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd0ab8dbd6fe2570800000000000000
+      internalID: 8443957775460601289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_door_rail
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 227
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 10, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7522d7daa6cc8280800000000000000
+      internalID: -9039631914971814530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_02_01
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 170
+        width: 201
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 73, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e862ce8b9b33e20800000000000000
+      internalID: 3329208753443999293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_door
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 190
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 32, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f224efee645cfd60800000000000000
+      internalID: 7925302279713071865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_coral_01
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 158
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c85879ad71dab90800000000000000
+      internalID: -7229095599247356844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: log_thick_cracked_02
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 174
+        width: 155
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 0, z: 21, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b0eebb5d790790800000000000000
+      internalID: -7563376266194143583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_02_01
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 157
+        width: 324
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20113df1c82c57a0800000000000000
+      internalID: -6387185357876555729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_sensor
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 198
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfca7c85b30283c0800000000000000
+      internalID: -4358917411060396103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_ladder
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 147
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 15, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75634778bb5f10870800000000000000
+      internalID: 8647462945308292695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_flying_platform
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 160
+        width: 82
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 33, y: 0, z: 33, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a272bf22b9973d0800000000000000
+      internalID: -3208362684979926449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_log_01_01
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 144
+        width: 126
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 22, y: 0, z: 23, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490bb2500a8910700800000000000000
+      internalID: 504852446291144852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_01_02
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 111
+        width: 321
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 0, z: 37, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcc32c9ef3c1fb80800000000000000
+      internalID: -8362687534741598977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_01_02
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 116
+        width: 201
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 72, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd51e65b0bf2ed0800000000000000
+      internalID: -2436534580101653450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_lamp
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 142
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d349278cd3270a2d0800000000000000
+      internalID: -3269487719789456323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_coral_02
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 78
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7ac25448ab47130800000000000000
+      internalID: 3563678282415908785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_log_01_02
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 128
+        width: 131
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 27, y: 0, z: 23, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a056918f0fe1180800000000000000
+      internalID: -9142605245146920329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_rope_01
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 128
+        width: 39
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 7, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2f8934fee862ee0800000000000000
+      internalID: -1286183485285272878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_ladder_broken
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 99
+        width: 79
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 40, y: 0, z: 15, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf09673dfc62d2a0800000000000000
+      internalID: -6714184259643830341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_capsule_glass
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 78
+        width: 79
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d89048311430500800000000000000
+      internalID: 361203947195174284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_seaweed
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 46
+        width: 75
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 14, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c75f2571b0041a0800000000000000
+      internalID: -6827444840289698783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_vain_03
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 74
+        width: 101
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0679b9c36c5517a60800000000000000
+      internalID: 7670005950297380704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_vain_04
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 74
+        width: 115
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c691069a95bba5fe0800000000000000
+      internalID: -1199440356972684948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_vain_05
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 73
+        width: 108
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d1ce3dc437ef120800000000000000
+      internalID: 2449522021146303844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: log_thin_03
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 100
+        width: 151
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 12, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a6a5fac96e4d1a0800000000000000
+      internalID: -6785545177909270009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_rope_02
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 114
+        width: 39
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc34fcf01c889870800000000000000
+      internalID: 8689849485602602233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: palm_trunk_01_01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 61
+        width: 324
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 54, y: 0, z: 52, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9c955728dbbeb50800000000000000
+      internalID: 6623596044990663129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bamboo_01_01
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 61
+        width: 201
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 0, z: 74, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9f8aee7b4382270800000000000000
+      internalID: 8225882683979921834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_chain
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 98
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 5, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71da08369f2d256a0800000000000000
+      internalID: -6461870546765173481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: log_thick_03
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 61
+        width: 155
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 19, y: 0, z: 18, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0abe7f0a4bbb1a30800000000000000
+      internalID: 4187146205332945422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_table
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 62
+        width: 146
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 28, y: 0, z: 29, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8eba4897b755af0800000000000000
+      internalID: -408284429360043870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_p_tl
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 237
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc2277b6b106dfc0800000000000000
+      internalID: -3470584578568999690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_np_tl
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405b19c80fca77d90800000000000000
+      internalID: -7100016138375809788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_p_tm
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 237
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88154bb23c525c5f0800000000000000
+      internalID: -737141443823119992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_p_tr
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 237
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638ab8ba326774e30800000000000000
+      internalID: 4487685449271978038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_np_tr
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 221
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad0fb0829f2666f0800000000000000
+      internalID: -691813186483057233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_p_br
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393fb94baaf8b6c60800000000000000
+      internalID: 7812495941941588883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_l
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f75d4673d1328e0800000000000000
+      internalID: -3375248298793483741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_p_bl
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaf0deef81d281b0800000000000000
+      internalID: -5655727765906720029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_np_bl
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 189
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c1bd3eab506e5e0800000000000000
+      internalID: -1880809494135759745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_np_br
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 189
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e71177604e694960800000000000000
+      internalID: 7586716270174738402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_tl
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 173
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b37df4ee43cd3d0800000000000000
+      internalID: -3180609038684046434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_tr
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 173
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc6d93c9066a6b30800000000000000
+      internalID: 4281346587891690681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_bl
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 141
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f88b9dd57a43010800000000000000
+      internalID: 1167742224922349388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_br
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 141
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562d99d8af1dd0a80800000000000000
+      internalID: -8498906047730560411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_b
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 206
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34aa1a0c4dea09a0800000000000000
+      internalID: -6265935020689808326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_bl
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 206
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de255859bbf16b020800000000000000
+      internalID: 2357106345502921453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_tl
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eafe5bae863a3ee0800000000000000
+      internalID: -1280651157645100313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_br
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 206
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9678bf63954cbb490800000000000000
+      internalID: -7729368447997737111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_tr
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050572b58b95d2660800000000000000
+      internalID: 7362639614158786640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_lamp_broken
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 142
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 10, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe0a1dc329b82730800000000000000
+      internalID: 3974630234570493682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_startend
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 238
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd4b829286bf1590800000000000000
+      internalID: -7701236165859652151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe_circular_t
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 222
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b2c9855b7fad7c0800000000000000
+      internalID: -4045648956991198455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_bottom
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 141
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2679ed2e8f782720800000000000000
+      internalID: 2821645415179974186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_wire_t
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 173
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff71c36d2ac2b2970800000000000000
+      internalID: 8731121380478425087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_np_tm
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 221
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a609e5a7efb1e0800000000000000
+      internalID: -2179768994858883867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_r
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 205
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58617377c22a9faa0800000000000000
+      internalID: -6273875102575337003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_wall_b
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 189
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d164d9a5d7bee8a0800000000000000
+      internalID: 9060530799593330516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ss_cave_rocks_bottom
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 173
+        width: 267
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff491faed6b44170800000000000000
+      internalID: 8161849492238847997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bamboo_01_01: 8225882683979921834
+      bamboo_01_02: -2436534580101653450
+      bamboo_02_01: 3329208753443999293
+      bamboo_02_02: 7257037250584183320
+      bamboo_log_01_01: 504852446291144852
+      bamboo_log_01_02: -9142605245146920329
+      bamboo_log_cracked_01_01: 5901058319570700362
+      bamboo_log_cracked_01_02: -3600250462136911233
+      log_thick_03: 4187146205332945422
+      log_thick_broken_01: -6390216442249414997
+      log_thick_cracked_02: -7563376266194143583
+      log_thin_03: -6785545177909270009
+      log_thin_broken_01: 3163550310128304390
+      log_thin_cracked_02: 8443957775460601289
+      palm_trunk_01_01: 6623596044990663129
+      palm_trunk_01_02: -8362687534741598977
+      palm_trunk_02_01: -6387185357876555729
+      palm_trunk_02_02: 8913703451369798892
+      palm_trunk_03_01: 2968157368301212332
+      palm_trunk_03_02: -8733085780848790232
+      pipe_circular_b: -6265935020689808326
+      pipe_circular_bl: 2357106345502921453
+      pipe_circular_br: -7729368447997737111
+      pipe_circular_t: -4045648956991198455
+      pipe_circular_tl: -1280651157645100313
+      pipe_circular_tr: 7362639614158786640
+      pipe_sensor: -4358917411060396103
+      pipe_startend: -7701236165859652151
+      rock_wall_b: 9060530799593330516
+      rock_wall_l: -3375248298793483741
+      rock_wall_np_bl: -1880809494135759745
+      rock_wall_np_br: 7586716270174738402
+      rock_wall_np_tl: -7100016138375809788
+      rock_wall_np_tm: -2179768994858883867
+      rock_wall_np_tr: -691813186483057233
+      rock_wall_p_bl: -5655727765906720029
+      rock_wall_p_br: 7812495941941588883
+      rock_wall_p_tl: -3470584578568999690
+      rock_wall_p_tm: -737141443823119992
+      rock_wall_p_tr: 4487685449271978038
+      rock_wall_r: -6273875102575337003
+      ss_beach: -1672297655042689566
+      ss_capsule_glass: 361203947195174284
+      ss_cave_rocks_bottom: 8161849492238847997
+      ss_cave_rocks_top: -2443753207590776661
+      ss_chain: -6461870546765173481
+      ss_coral_01: -7229095599247356844
+      ss_coral_02: 3563678282415908785
+      ss_door: 7925302279713071865
+      ss_door_rail: -9039631914971814530
+      ss_drain: 1909023678011661814
+      ss_flying_platform: -3208362684979926449
+      ss_grass_high: -8264443977381972491
+      ss_grass_low: 7824005624520345549
+      ss_grass_plane: 291015167079183187
+      ss_ladder: 8647462945308292695
+      ss_ladder_broken: -6714184259643830341
+      ss_lamp: -3269487719789456323
+      ss_lamp_broken: 3974630234570493682
+      ss_rope_01: -1286183485285272878
+      ss_rope_02: 8689849485602602233
+      ss_sea_back: -8980318243330744454
+      ss_sea_shore: 8197270265424323694
+      ss_seaweed: -6827444840289698783
+      ss_table: -408284429360043870
+      ss_vain_01: 195810333565065450
+      ss_vain_02: -4732132670729466635
+      ss_vain_03: 7670005950297380704
+      ss_vain_04: -1199440356972684948
+      ss_vain_05: 2449522021146303844
+      ss_wire_bl: 1167742224922349388
+      ss_wire_bottom: 2821645415179974186
+      ss_wire_br: -8498906047730560411
+      ss_wire_t: 8731121380478425087
+      ss_wire_tl: -3180609038684046434
+      ss_wire_tr: 4281346587891690681
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
