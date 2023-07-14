@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 
-
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -42,6 +41,7 @@ public class GameManager : MonoBehaviour
     public bool frontDoor;
     public bool smokestack;
 
+    [SerializeField] Slider volumeSlider;
 
     private void Awake()
     {
@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        LoadVolume();
+
         life1Img = life1.GetComponent<Image>();
         life2Img = life2.GetComponent<Image>();
         life3Img = life3.GetComponent<Image>();
@@ -253,4 +255,19 @@ public class GameManager : MonoBehaviour
         timeCount += Time.deltaTime;
     }
 
+    public void ChangeVolume()
+    {
+        AudioListener.volume = volumeSlider.value;
+        SaveVolume();
+    }
+
+    private void LoadVolume()
+    {
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume", 0.6f);
+    }
+
+    private void SaveVolume()
+    {
+        PlayerPrefs.SetFloat("Volume", volumeSlider.value);
+    }
 }
