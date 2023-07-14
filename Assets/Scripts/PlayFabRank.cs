@@ -10,6 +10,9 @@ public class PlayFabRank : MonoBehaviour
     public GameObject rowPrefab;
     public Transform rowsParent;
     public GameObject leaderboard;
+    public InputField nameInput;
+
+    // 로그인 최초에만 하도록 수정
 
     private void Start()
     {
@@ -29,6 +32,7 @@ public class PlayFabRank : MonoBehaviour
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
     }
+
     void OnSuccess(LoginResult result)
     {
         Debug.Log("Successful login");
@@ -40,6 +44,23 @@ public class PlayFabRank : MonoBehaviour
         Debug.Log(error.GenerateErrorReport());
     }
 
+    public void PressOK()
+    {
+        SubmitName();
+    }
+
+    public void SubmitName()
+    {
+        var request = new UpdateUserTitleDisplayNameRequest
+        {
+            DisplayName = nameInput.text
+        };
+        PlayFabClientAPI.UpdateUserTitleDisplayName(request, OndisplayNameUpdate, OnError);
+    }
+    void OndisplayNameUpdate(UpdateUserTitleDisplayNameResult result)
+    {
+        Debug.Log("OK");
+    }
 
     public void GetLeaderboard()
     {
@@ -48,7 +69,7 @@ public class PlayFabRank : MonoBehaviour
         {
             StatisticName = "ScoreRank",
             StartPosition = 0,
-            MaxResultsCount = 10
+            MaxResultsCount = 7
         };
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);
     }

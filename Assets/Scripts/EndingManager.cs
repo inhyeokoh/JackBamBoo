@@ -21,25 +21,11 @@ public class EndingManager : MonoBehaviour
     }
 
     // 캔버스를 6초 뒤에 나타나는 캔버스에 점수를 표기하고 서버의 리더보드로 점수를 보냄.
-    // if문으로 최고점을 다루고 있었으나 playFab리더보드에서는 갱신시에 알아서 최고점을 다루므로 현재는 무의미
     private void AppearCanvas()
     {
         endingCanvas.gameObject.SetActive(true);
-        int bestScore = PlayerPrefs.GetInt("BestScore", 0);
-        Debug.Log(timeScore);
-        Debug.Log(totalScore);
-        Debug.Log(bestScore);
-        endingCanvas.transform.Find("InputName").gameObject.SetActive(true);
-        endingCanvas.transform.Find("OKbtn").gameObject.SetActive(true);
         endingCanvas.transform.Find("Score").gameObject.SetActive(true);
-        GameObject.Find("Score").GetComponent<TextMeshProUGUI>().text = string.Format("Score : " + totalScore);
-        PlayerPrefs.SetInt("BestScore", totalScore);
-        PlayerPrefs.Save();        
-    }
-
-    public void PressOK()
-    {
-        playFabManager.SubmitName();
+        GameObject.Find("Score").GetComponent<TextMeshProUGUI>().text = string.Format("Score : " + totalScore);    
         playFabManager.SendLeaderboard(totalScore);
     }
 

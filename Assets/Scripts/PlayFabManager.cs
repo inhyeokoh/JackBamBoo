@@ -10,50 +10,11 @@ public class PlayFabManager : MonoBehaviour
     public GameObject rowPrefab;
     public Transform rowsParent;
     public GameObject leaderboard;
-    public InputField nameInput;
-
-
-    private void Start()
-    {
-        Login();
-    }
-
-    void Login()
-    {
-        var request = new LoginWithCustomIDRequest
-        {
-            CustomId = SystemInfo.deviceUniqueIdentifier,
-            CreateAccount = true,
-            InfoRequestParameters = new GetPlayerCombinedInfoRequestParams
-            {
-                GetPlayerProfile = true
-            }
-        };
-        PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
-    }
-    void OnSuccess(LoginResult result)
-    {
-        Debug.Log("Successful login");
-    }
 
     void OnError(PlayFabError error)
     {
         Debug.Log("Error while login");
         Debug.Log(error.GenerateErrorReport());
-    }
-
-    public void SubmitName()
-    {
-        var request = new UpdateUserTitleDisplayNameRequest
-        {
-            DisplayName = nameInput.text
-        };
-        PlayFabClientAPI.UpdateUserTitleDisplayName(request, OndisplayNameUpdate, OnError);
-    }
-
-    void OndisplayNameUpdate(UpdateUserTitleDisplayNameResult result)
-    {
-        Debug.Log("OK");
     }
 
     public void SendLeaderboard(int score)
