@@ -8,6 +8,8 @@ public class Stage3gate2 : MonoBehaviour
     private bool isOverlap;
     public Transform overlapPos;
     public LayerMask stageLayer;
+    [SerializeField] GameObject Chicken;
+    bool petActivate;
 
     private void Update()
     {
@@ -18,7 +20,8 @@ public class Stage3gate2 : MonoBehaviour
 
     public void DoorOpen()
     {
-        if (isOverlap == false)
+        petActivate = Chicken.GetComponent<PetMove>().activate;
+        if (isOverlap == false || !petActivate)
             return;
         else
         {

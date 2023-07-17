@@ -68,7 +68,7 @@ public class GiantMove : MonoBehaviour
 
     private void LimitGiantXpos()
     {
-        if (transform.position.x > 18.5f || transform.position.x < 3.8f)
+        if (transform.position.x > 18.5f || transform.position.x < 2.85f)
             speed = speed * -1f;
     }
 

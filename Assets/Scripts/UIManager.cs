@@ -7,6 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    private void Start()
+    {
+        if (GameObject.Find("GameManager") != null)
+        {
+            GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+            if (gameManager.restart)
+            {
+                StartGame();
+            }
+        }
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene("Stage1");

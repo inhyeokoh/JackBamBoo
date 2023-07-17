@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public bool restart;
 
     public int life = 5;
     private float timeCount = 0;
@@ -19,7 +20,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject UIcanvas;
     public GameObject notification;
-    public GameObject pauseUI;
+    public GameObject closeBtn;
+    public GameObject gameOverImg;
+
     public GameObject life1;
     public GameObject life2;
     public GameObject life3;
@@ -53,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        // 프레임 60으로 고정
+        // 60프레임으로 고정
         Application.targetFrameRate = 60;
     }
 
@@ -74,7 +77,7 @@ public class GameManager : MonoBehaviour
         eventTrigger.triggers.Add(entry_PointerDown);
         timeCount = 0;
 
-        // 유니티 에디터에서는 점프와 문 버튼 비활성화(조이스틱 비활성화는 플레이어에 스크립트에서 다룸)
+        // 유니티 에디터에서는 점프와 문 버튼 비활성화(조이스틱 비활성화는 플레이어 스크립트에서 다룸)
 #if UNITY_EDITOR || UNITY_STANDALONE
         GameObject.Find("JumpBtn").SetActive(false);
         GameObject.Find("DoorBtn").SetActive(false);
@@ -97,7 +100,9 @@ public class GameManager : MonoBehaviour
         player = GameObject.Find("Player");
         if (SceneManager.GetActiveScene().name == "Menu")
         {
+            // Dontdestroy 했던것들 파괴
             Destroy(gameObject);
+            Destroy(UIcanvas);
             Destroy(player);
         }
         else if (SceneManager.GetActiveScene().name == "Stage1")
@@ -153,7 +158,7 @@ public class GameManager : MonoBehaviour
 
     public void CheckDoor()
     {
-        // 씬마다 존재하는 포털을 열어줌
+        // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
         if (SceneManager.GetActiveScene().name == "Stage1")
             st1g1.DoorOpen();
         else if (SceneManager.GetActiveScene().name == "Stage2")
@@ -204,45 +209,35 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0.0f;
         notification.gameObject.SetActive(true);
+        closeBtn.SetActive(false);
+        gameOverImg.SetActive(true);
     }
 
-    // 메뉴로 이동하는 버튼
     public void GotoMenu()
     {       
         Time.timeScale = 1f;
-        notification.gameObject.SetActive(false);
         SceneManager.LoadScene("Menu");
     }
 
-    // 죽었을 때 "재시도 버튼"과 일시정지 버튼 내의 "새 시작 버튼"을 누르면 생명력과 체력 이미지 복구한 뒤, 씬1로 이동
     public void Retry()
     {
         Time.timeScale = 1f;
-        notification.gameObject.SetActive(false);
-        life = 5;
-        // for문으로 가능할까?
-        life1Img.color = new Color32(255, 255, 255, 220);
-        life2Img.color = new Color32(255, 255, 255, 220);
-        life3Img.color = new Color32(255, 255, 255, 220);
-        life4Img.color = new Color32(255, 255, 255, 220);
-        life5Img.color = new Color32(255, 255, 255, 220);
-        // 점수 계산에 쓸 timeCount 초기화
-        timeCount = 0;
-        SceneManager.LoadScene("Stage1");
+        restart = true;
+        SceneManager.LoadScene("Menu");
     }
 
 
     public void PauseGame()
     {
         Time.timeScale = 0;
-        pauseUI.SetActive(true);
+        notification.SetActive(true);
     }
 
     // 일시정지 풀어주기
     public void GobackToGame()
     {
         Time.timeScale = 1;
-        pauseUI.SetActive(false);
+        notification.SetActive(false);
     }
 
     void OnPointerDown(PointerEventData data)
@@ -270,4 +265,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Volume", volumeSlider.value);
     }
+
 }

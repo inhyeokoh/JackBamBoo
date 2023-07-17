@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PetMove : MonoBehaviour
 {
-    bool active;
+    public bool activate;
     private float speed = 3f;
     private float distance = 1f;
     private float jumpPower = 5f;
@@ -22,20 +22,21 @@ public class PetMove : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         player = GameObject.Find("Player").transform;
+        Physics2D.IgnoreLayerCollision(7, 9);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            active = true;
-            Physics2D.IgnoreLayerCollision(8, 9);
+            Debug.Log("움직임 시작");
+            activate = true;
         }
     }
 
     private void Update() 
     {
-        if (active)
+        if (activate)
         {
             if (Mathf.Abs(transform.position.x - player.position.x) > distance)
             {
