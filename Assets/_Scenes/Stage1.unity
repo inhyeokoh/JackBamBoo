@@ -6269,8 +6269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restart: 0
-  life: 5
   timeScore: 0
+  player: {fileID: 104161488}
   UIcanvas: {fileID: 746157862}
   notification: {fileID: 1747459707}
   closeBtn: {fileID: 7892734326880418011}
@@ -7874,7 +7874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131642556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.81, y: -1.54, z: 0}
+  m_LocalPosition: {x: 51.4, y: 32.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

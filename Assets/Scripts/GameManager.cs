@@ -11,11 +11,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public bool restart;
 
-    public int life = 5;
-    private float timeCount = 0;
+    int life = 5;
+    float timeCount = 0;
     public int timeScore = 0;
 
-    GameObject player;
+    [SerializeField] GameObject player;
     Transform beginPos;
 
     public GameObject UIcanvas;
@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
     // 씬이 로드될 때 마다 실행하는 메서드
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        player = GameObject.Find("Player");
         if (SceneManager.GetActiveScene().name == "Menu")
         {
             // Dontdestroy 했던것들 파괴
@@ -142,7 +141,7 @@ public class GameManager : MonoBehaviour
                 player.transform.position = beginPos.position;
             }
         }
-        // 엔딩씬 열릴 때 카운트 된 시간을 timeScore 변수에 저장. EndingManager 스크립트에서 이 변수를 사용해서 점수를 보여주고 서버에 등록시킴.
+        // 엔딩씬 열릴 때 카운트 된 시간을 timeScore 변수에 저장.
         else if (SceneManager.GetActiveScene().name == "Ending")
         {
             timeScore = (int)timeCount;          

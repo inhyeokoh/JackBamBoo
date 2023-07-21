@@ -13,19 +13,17 @@ public class PlayerMove : MonoBehaviour
     private SpriteRenderer sr;
     private GameObject gmObject;
     private AudioSource jumpSound;
-    FixedJoint2D fixJoint;
+    private FixedJoint2D fixJoint;
     GameManager gm;
 
     public Transform groundCheck;
     public LayerMask GroundLayer;
 
-    public float speed = 3f;
-    private float jumpPower = 5f;
-    public int life = 3;
-
-    private bool isGround = true;
-    private bool isLadder;
-    private bool isRope = false;
+    float speed = 3f;
+    float jumpPower = 5f;
+    bool isGround = true;
+    bool isLadder;
+    bool isRope = false;
 
     private void Awake()
     {

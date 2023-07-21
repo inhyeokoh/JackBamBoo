@@ -2697,6 +2697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingCanvas: {fileID: 1217585678}
+  playFabManager: {fileID: 659646592}
 --- !u!114 &659646592
 MonoBehaviour:
   m_ObjectHideFlags: 0
