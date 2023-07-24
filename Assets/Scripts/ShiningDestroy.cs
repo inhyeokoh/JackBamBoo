@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+// 플레이어가 닭과 접촉하면 닭 주변 빛 삭제
 public class ShiningDestroy : MonoBehaviour
 {
 

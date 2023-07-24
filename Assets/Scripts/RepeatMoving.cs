@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// 반복적으로 움직이는 구름과 새에 적용 
 public class RepeatMoving : MonoBehaviour
 {
-    public float speed;
-    public Transform startPoint;
-    public Transform endPoint;
-    private Transform destination;
+    [SerializeField] float speed;
+    [SerializeField] Transform startPoint;
+    [SerializeField] Transform endPoint;
+    Transform destination;
     SpriteRenderer sr;
 
     private void Start()
@@ -18,7 +19,7 @@ public class RepeatMoving : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ( collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             collision.transform.SetParent(gameObject.transform);
         }
@@ -39,9 +40,9 @@ public class RepeatMoving : MonoBehaviour
         if (endPoint.position == transform.position)
         {
             destination = startPoint;
+            // 새는 flipX 변경
             if (gameObject.CompareTag("Dead"))
                 sr.flipX = true;
-
         }
         else if (startPoint.position == transform.position)
         {

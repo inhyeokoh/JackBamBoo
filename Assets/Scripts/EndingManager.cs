@@ -7,13 +7,14 @@ using TMPro;
 public class EndingManager : MonoBehaviour
 {
     [SerializeField] Canvas endingCanvas;
+    [SerializeField] TMP_Text scoreText;
     [SerializeField] PlayFabManager playFabManager;
     int timeScore;
     int totalScore;
 
     private void Start()
     {
-        // GameManager에서 엔딩씬에 도착했을때 기록해둔 timeScore 값을 가져와서 점수를 매김
+        // 엔딩씬에 도착했을때 GameManager에서 timeScore 값을 가져와서 점수를 매김
         timeScore = GameManager.Instance.timeScore;
         totalScore = 1000000 / timeScore;
         Invoke("AppearCanvas", 6f);
@@ -23,8 +24,8 @@ public class EndingManager : MonoBehaviour
     private void AppearCanvas()
     {
         endingCanvas.gameObject.SetActive(true);
-        endingCanvas.transform.Find("Score").gameObject.SetActive(true);
-        GameObject.Find("Score").GetComponent<TMP_Text>().text = string.Format("Score : " + totalScore);
+        scoreText.gameObject.SetActive(true);
+        scoreText.text = string.Format("Score : " + totalScore);
         playFabManager.SendLeaderboard(totalScore);
     }
 

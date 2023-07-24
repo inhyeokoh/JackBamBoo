@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class StageBird : MonoBehaviour
 {
-    private float speed = 2f;
-    private bool letsMove; 
-    public Transform destination;
+    float speed = 2f;
+    bool startMove; 
+    [SerializeField] Transform destination;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            letsMove = true;
+            startMove = true;
             collision.transform.SetParent(gameObject.transform);
         }
     }
@@ -28,7 +28,7 @@ public class StageBird : MonoBehaviour
 
     private void Update()
     {
-        if (letsMove)
+        if (startMove)
         {            
             transform.position = Vector2.MoveTowards(transform.position, destination.position, Time.deltaTime * speed);
         }

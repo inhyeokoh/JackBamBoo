@@ -2697,6 +2697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endingCanvas: {fileID: 1217585678}
+  scoreText: {fileID: 1520389532}
   playFabManager: {fileID: 659646592}
 --- !u!114 &659646592
 MonoBehaviour:
@@ -3454,7 +3455,7 @@ GameObject:
   - component: {fileID: 1520389533}
   - component: {fileID: 1520389532}
   m_Layer: 5
-  m_Name: Score
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

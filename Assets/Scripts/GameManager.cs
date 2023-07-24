@@ -16,30 +16,23 @@ public class GameManager : MonoBehaviour
     public int timeScore = 0;
 
     [SerializeField] GameObject player;
-    Transform beginPos;
+    [SerializeField] GameObject UIcanvas;
+    [SerializeField] GameObject notification;
+    [SerializeField] GameObject closeBtn;
+    [SerializeField] GameObject gameOverImg;
 
-    public GameObject UIcanvas;
-    public GameObject notification;
-    public GameObject closeBtn;
-    public GameObject gameOverImg;
-
-    public GameObject life1;
-    public GameObject life2;
-    public GameObject life3;
-    public GameObject life4;
-    public GameObject life5;
     Stage1gate1 st1g1;
     Stage2gate1 st2g1;
     Stage2gate2 st2g2;
     Stage3gate1 st3g1;
     Stage3gate2 st3g2;
+    Transform beginPos;
 
-
-    private Image life1Img;
-    private Image life2Img;
-    private Image life3Img;
-    private Image life4Img;
-    private Image life5Img;
+    [SerializeField] Image life1Img;
+    [SerializeField] Image life2Img;
+    [SerializeField] Image life3Img;
+    [SerializeField] Image life4Img;
+    [SerializeField] Image life5Img;
 
     public bool frontDoor;
     public bool smokestack;
@@ -64,11 +57,6 @@ public class GameManager : MonoBehaviour
     {
         LoadVolume();
 
-        life1Img = life1.GetComponent<Image>();
-        life2Img = life2.GetComponent<Image>();
-        life3Img = life3.GetComponent<Image>();
-        life4Img = life4.GetComponent<Image>();
-        life5Img = life5.GetComponent<Image>();
         // OnClick은 눌렀다 떼어야만 작동하는데 점프 버튼은 누른 즉시 실행이 필요하므로 이벤트 트리거 포인터 다운 사용
         EventTrigger eventTrigger = GameObject.Find("JumpBtn").GetComponent<EventTrigger>();
         EventTrigger.Entry entry_PointerDown = new EventTrigger.Entry();

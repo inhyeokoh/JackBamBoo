@@ -6,10 +6,10 @@ using UnityEngine;
 public class PetMove : MonoBehaviour
 {
     public bool activate;
-    private float speed = 3f;
-    private float distance = 1f;
-    private float jumpPower = 5f;
-    private float telDist = 12f;
+    float speed = 3f;
+    float distance = 1f;
+    float jumpPower = 5f;
+    float teleportDist = 12f;
 
     Rigidbody2D rb;
     Animator ani;
@@ -29,7 +29,6 @@ public class PetMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("움직임 시작");
             activate = true;
         }
     }
@@ -61,7 +60,7 @@ public class PetMove : MonoBehaviour
                 ani.SetBool("isRun", false);
             }
 
-            if (Vector2.Distance(player.position, transform.position) > telDist)
+            if (Vector2.Distance(player.position, transform.position) > teleportDist)
             {
                 transform.position = player.position;
             }            
