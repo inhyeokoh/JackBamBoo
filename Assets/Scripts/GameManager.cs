@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour
     // 씬이 로드될 때 마다 실행하는 메서드
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // beginpos 있으면 위치시키기
         if (SceneManager.GetActiveScene().name == "Menu")
         {
             // Dontdestroy 했던것들 파괴
@@ -101,7 +102,7 @@ public class GameManager : MonoBehaviour
             if (frontDoor)
             {
                 GameObject.Find("Scene2Manager").SetActive(false);
-                player.transform.position = new Vector3(3.5f, 9.2f, 0f);
+                player.transform.position = GameObject.Find("Stage2gate1").transform.position;
             }
             else
             {
@@ -115,9 +116,7 @@ public class GameManager : MonoBehaviour
             beginPos = GameObject.Find("BeginPos").transform;
             if (!smokestack)
             {
-                float playerX = PlayerPrefs.GetFloat("PlayerX");
-                float playerY = PlayerPrefs.GetFloat("PlayerY");
-                player.transform.position = new Vector2(playerX, playerY);
+                player.transform.position = GameObject.Find("Stage3gate1").transform.position;
             }
             else
             {
@@ -144,7 +143,7 @@ public class GameManager : MonoBehaviour
             st1g1.DoorOpen();
         else if (SceneManager.GetActiveScene().name == "Stage2")
         {
-            st2g1.DoorOpen();
+/*            st2g1.DoorOpen();*/
             st2g2.DoorOpen();
         }
         else if (SceneManager.GetActiveScene().name == "Stage3")

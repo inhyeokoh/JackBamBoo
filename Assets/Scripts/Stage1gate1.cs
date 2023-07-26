@@ -25,7 +25,7 @@ public class Stage1gate1 : MonoBehaviour
             ani.SetBool("gate", true);
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                DoorOpen();            
+                DoorOpen();
             }
         }
         else

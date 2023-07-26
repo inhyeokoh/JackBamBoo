@@ -18,11 +18,11 @@ public class Stage2gate2 : MonoBehaviour
 
     public void DoorOpen()
     {
-        if (isOverlap == false)
+        if (!isOverlap)
             return;
         else
         {
-            GameObject.Find("GameManager").GetComponent<GameManager>().smokestack = true;
+            GameManager.Instance.smokestack = true;
             SceneManager.LoadScene("Stage3");
         }
     }
