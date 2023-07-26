@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Stage2gate1 : MonoBehaviour
 {
+    [SerializeField] Transform overlapPos;
+    [SerializeField] LayerMask stageLayer;
     bool isOverlap;
-    public Transform overlapPos;
-    public LayerMask stageLayer;
 
     private void Update()
     {

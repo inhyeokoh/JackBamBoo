@@ -6192,17 +6192,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restart: 0
-  timeScore: 0
+  timeCount: 0
   player: {fileID: 5122355760525795539}
   UIcanvas: {fileID: 746157862}
   notification: {fileID: 1747459707}
   closeBtn: {fileID: 7892734326880418011}
   gameOverImg: {fileID: 1557276575}
-  life1Img: {fileID: 449099718}
-  life2Img: {fileID: 216249404}
-  life3Img: {fileID: 810646883}
-  life4Img: {fileID: 2044510213}
-  life5Img: {fileID: 839616996}
+  lives:
+  - {fileID: 449099718}
+  - {fileID: 216249404}
+  - {fileID: 810646883}
+  - {fileID: 2044510213}
+  - {fileID: 839616996}
   frontDoor: 0
   smokestack: 0
   volumeSlider: {fileID: 1149549874}

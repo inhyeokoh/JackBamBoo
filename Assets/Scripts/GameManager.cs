@@ -12,8 +12,7 @@ public class GameManager : MonoBehaviour
     public bool restart;
 
     int life = 5;
-    float timeCount = 0;
-    public int timeScore = 0;
+    public float timeCount = 0;
 
     [SerializeField] GameObject player;
     [SerializeField] GameObject UIcanvas;
@@ -28,11 +27,7 @@ public class GameManager : MonoBehaviour
     Stage3gate2 st3g2;
     Transform beginPos;
 
-    [SerializeField] Image life1Img;
-    [SerializeField] Image life2Img;
-    [SerializeField] Image life3Img;
-    [SerializeField] Image life4Img;
-    [SerializeField] Image life5Img;
+    [SerializeField] Image[] lives = new Image[5];
 
     public bool frontDoor;
     public bool smokestack;
@@ -103,7 +98,7 @@ public class GameManager : MonoBehaviour
             st2g1 = GameObject.Find("Stage2gate1").GetComponent<Stage2gate1>();
             st2g2 = GameObject.Find("Stage2gate2").GetComponent<Stage2gate2>();
             beginPos = GameObject.Find("BeginPos").transform;
-            if (frontDoor == true)
+            if (frontDoor)
             {
                 GameObject.Find("Scene2Manager").SetActive(false);
                 player.transform.position = new Vector3(3.5f, 9.2f, 0f);
@@ -118,7 +113,7 @@ public class GameManager : MonoBehaviour
             st3g1 = GameObject.Find("Stage3gate1").GetComponent<Stage3gate1>();
             st3g2 = GameObject.Find("Stage3gate2").GetComponent<Stage3gate2>();
             beginPos = GameObject.Find("BeginPos").transform;
-            if (smokestack == false)
+            if (!smokestack)
             {
                 float playerX = PlayerPrefs.GetFloat("PlayerX");
                 float playerY = PlayerPrefs.GetFloat("PlayerY");
@@ -129,10 +124,8 @@ public class GameManager : MonoBehaviour
                 player.transform.position = beginPos.position;
             }
         }
-        // 엔딩씬 열릴 때 카운트 된 시간을 timeScore 변수에 저장.
         else if (SceneManager.GetActiveScene().name == "Ending")
-        {
-            timeScore = (int)timeCount;          
+        {  
             Destroy(player);
             Destroy(UIcanvas);            
         }
@@ -143,6 +136,7 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    // 스크립트 5개보다 게임 매니저에서 다 관리하는건 어떨까
     public void CheckDoor()
     {
         // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
@@ -163,31 +157,17 @@ public class GameManager : MonoBehaviour
     public void Revive()
     {
         life--;
-        // 색 변경 대신 setactive(false)는 어떨까
-        if (life == 4)
+
+        if (life < 1)
         {
-            player.transform.position = beginPos.position;
-            life5Img.color = new Color32(0, 0, 0, 150);
-        }
-        else if (life == 3)
-        {
-            player.transform.position = beginPos.position;
-            life4Img.color = new Color32(0, 0, 0, 150);
-        }
-        else if (life == 2)
-        {  
-            player.transform.position = beginPos.position;
-            life3Img.color = new Color32(0, 0, 0, 150);
-        }
-        else if (life == 1)
-        {
-            player.transform.position = beginPos.position;
-            life2Img.color = new Color32(0, 0, 0, 150);
-        }
-        else
-        {
-            life1Img.color = new Color32(0, 0, 0, 150);
             Dead();
+        }
+
+        // 생명력만큼의 하트를 제외하고 회색으로 변경
+        for (int i = 5; i > life; i--)
+        {
+            player.transform.position = beginPos.position;
+            lives[i - 1].color = new Color32(0, 0, 0, 150);
         }
     }
 
