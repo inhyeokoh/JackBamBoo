@@ -6631,6 +6631,7 @@ GameObject:
   - component: {fileID: 582921997}
   - component: {fileID: 582921996}
   - component: {fileID: 582921998}
+  - component: {fileID: 582921999}
   m_Layer: 0
   m_Name: Stage2gate2
   m_TagString: Untagged
@@ -6686,13 +6687,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582921994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81a7adedfd771d9439992e53c067ab29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   overlapPos: {fileID: 582921997}
   stageLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &582921999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582921994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34aa3e6ba974f524690927dcbe4738b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
     serializedVersion: 2
     m_Bits: 256
 --- !u!1 &586459646
@@ -18555,6 +18571,7 @@ GameObject:
   - component: {fileID: 1313151322}
   - component: {fileID: 1313151321}
   - component: {fileID: 1313151323}
+  - component: {fileID: 1313151324}
   m_Layer: 0
   m_Name: Stage2gate1
   m_TagString: Untagged
@@ -18610,13 +18627,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313151320}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f48940694593014a8df6d126474cd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   overlapPos: {fileID: 1313151322}
   stageLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &1313151324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313151320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34aa3e6ba974f524690927dcbe4738b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
     serializedVersion: 2
     m_Bits: 256
 --- !u!1 &1323479514
@@ -28648,7 +28680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3421025589598730227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.46, y: 10.45, z: 0}
+  m_LocalPosition: {x: 8.07, y: 10.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38773,22 +38805,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!1 &5136765575741413153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5142008703960982555}
-  m_Layer: 0
-  m_Name: ROOF
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
 --- !u!1 &5136765673305295825
 GameObject:
   m_ObjectHideFlags: 0
@@ -40530,21 +40546,6 @@ Transform:
   m_Father: {fileID: 5135022948510211423}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &5142008703960982555
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5136765575741413153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.66, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5142388592949828527}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5142020514803387503
 Transform:
   m_ObjectHideFlags: 0
@@ -41761,7 +41762,6 @@ Transform:
   - {fileID: 5134953539432481875}
   - {fileID: 5142241517497927045}
   - {fileID: 5135022948510211423}
-  - {fileID: 5142008703960982555}
   m_Father: {fileID: 4930316}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

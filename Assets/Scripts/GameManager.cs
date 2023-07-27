@@ -138,6 +138,7 @@ public class GameManager : MonoBehaviour
     // 스크립트 5개보다 게임 매니저에서 다 관리하는건 어떨까
     public void CheckDoor()
     {
+
         // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
         if (SceneManager.GetActiveScene().name == "Stage1")
             st1g1.DoorOpen();

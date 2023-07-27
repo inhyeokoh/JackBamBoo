@@ -24188,6 +24188,7 @@ GameObject:
   - component: {fileID: 1333120370}
   - component: {fileID: 1333120369}
   - component: {fileID: 1333120368}
+  - component: {fileID: 1333120371}
   m_Layer: 0
   m_Name: Stage3gate2
   m_TagString: Untagged
@@ -24202,7 +24203,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333120367}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3025978f7dbf4145b2cc19a58497bf8, type: 3}
   m_Name: 
@@ -24253,6 +24254,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333120371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333120367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34aa3e6ba974f524690927dcbe4738b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &1356591824
 GameObject:
   m_ObjectHideFlags: 0
@@ -36671,6 +36687,7 @@ GameObject:
   - component: {fileID: 1162602603224599830}
   - component: {fileID: 1162602603224599829}
   - component: {fileID: 1162602603224599831}
+  - component: {fileID: 1162602603224599832}
   m_Layer: 0
   m_Name: Stage3gate1
   m_TagString: Untagged
@@ -36726,13 +36743,28 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162602603224599828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8101cffbcc4f3548b3350790e24c126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   overlapPos: {fileID: 1162602603224599830}
   stageLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &1162602603224599832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162602603224599828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34aa3e6ba974f524690927dcbe4738b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
     serializedVersion: 2
     m_Bits: 256
 --- !u!61 &1622981414777720016

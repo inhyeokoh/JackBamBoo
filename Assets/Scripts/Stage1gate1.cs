@@ -44,14 +44,15 @@ public class Stage1gate1 : MonoBehaviour
         {
             GameObject particle = Instantiate(particleFactory).gameObject;
             particle.transform.position = player.transform.position;
-            Invoke("TeleportMove", 2f);
+            StartCoroutine(TeleportMove(1.5f));
         }
     }
 
-
-    private void TeleportMove()
+    IEnumerator TeleportMove(float delaytime)
     {
+        yield return new WaitForSeconds(delaytime);
+
         SceneManager.LoadScene("Stage2");
-    }  
+    }
 
 }

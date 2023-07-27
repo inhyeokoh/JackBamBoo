@@ -17,7 +17,7 @@ public class Stage3gate1 : MonoBehaviour
     }
     public void DoorOpen()
     {
-        if (isOverlap == false)
+        if (!isOverlap)
             return;
         else
         {

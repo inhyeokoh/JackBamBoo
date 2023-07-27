@@ -5,30 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class GateManager : MonoBehaviour
 {
-/*    [SerializeField] LayerMask teleportLayer;
-    [SerializeField] ParticleSystem particleFactory;
-    [SerializeField] GameObject player;
-
+    [SerializeField] LayerMask layerMask;
+    
+    GameObject Chicken;
     Vector3 overlapPos1;
     Vector3 overlapPos2;
-    Animator ani;
     bool isOverlap1;
     bool isOverlap2;
+    bool petActivate;
 
 
     // 씬1은 텔레포트매니저, 씬2,3은 게이트매니저
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Stage1")
+        if (SceneManager.GetActiveScene().name == "Stage2")
         {
-
-            ani = GetComponent<Animator>();
-            overlapPos1 = GameObject.Find("Gate").transform.position;
-        }
-        else if (SceneManager.GetActiveScene().name == "Stage2")
-        {
-
             overlapPos1 = GameObject.Find("Stage2gate1").transform.position;
             overlapPos2 = GameObject.Find("Stage2gate2").transform.position;
         }
@@ -36,64 +28,31 @@ public class GateManager : MonoBehaviour
         {
             overlapPos1 = GameObject.Find("Stage3gate1").transform.position;
             overlapPos2 = GameObject.Find("Stage3gate2").transform.position;
+            Chicken = GameObject.Find("Chicken");
         }
     }
     private void Update()
     {
-        isOverlap1 = Physics2D.OverlapCircle(overlapPos1, 1f, teleportLayer);
-        isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, teleportLayer);
-        if (isOverlap1)
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            ani.SetBool("gate", true);
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (SceneManager.GetActiveScene().name == "Stage2")
             {
-                DoorOpen();
+                Door1Open();
+                Door2Open();
+            }
+            else if (SceneManager.GetActiveScene().name == "Stage3")
+            {
+                Door3Open();
+                Door4Open();
             }
         }
-        else
-        {
-            ani.SetBool("gate", false);
-        }
-
-        if (isOverlap2)
-        {
-            ani.SetBool("gate", true);
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                DoorOpen();
-            }
-        }
-        else
-        {
-            ani.SetBool("gate", false);
-        }
-
 
     }
-    public void DoorOpen()
-    {
-        if (!isOverlap)
-        {
-            return;
-        }
-        else
-        {
-            if (SceneManager.GetActiveScene().name == "Stage1")
-            {
-                GameObject particle = Instantiate(particleFactory).gameObject;
-                particle.transform.position = player.transform.position;
-                StartCoroutine(TeleportMove(1.5f));
-            }
-            else if (true)
-            {
 
-            }
-
-        }
-    }
-    public void Door2Open()
+    public void Door1Open()
     {
-        if (!isOverlap)
+        isOverlap1 = Physics2D.OverlapCircle(overlapPos1, 1f, layerMask);
+        if (!isOverlap1)
         {
             return;
         }
@@ -104,10 +63,44 @@ public class GateManager : MonoBehaviour
         }
     }
 
-    IEnumerator TeleportMove(float delaytime)
+    public void Door2Open()
     {
-        yield return new WaitForSeconds(delaytime);
+        isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, layerMask);
+        if (!isOverlap2)
+        {
+            return;
+        }
+        else
+        {
+            GameManager.Instance.smokestack = true;
+            SceneManager.LoadScene("Stage3");
+        }
+    }
 
-        SceneManager.LoadScene("Stage2");
-    }*/
+    public void Door3Open()
+    {
+        isOverlap1 = Physics2D.OverlapCircle(overlapPos1, 1f, layerMask);
+        if (!isOverlap1)
+        {
+            return;
+        }
+        else
+        {
+            SceneManager.LoadScene("Stage2");
+        }
+    }
+
+    public void Door4Open()
+    {
+        isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, layerMask);
+        petActivate = Chicken.GetComponent<PetMove>().activate;
+        if (!isOverlap2|| !petActivate)
+            return;
+        else
+        {
+            SceneManager.LoadScene("Ending");
+        }
+    }
+
+
 }
