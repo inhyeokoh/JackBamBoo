@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Stage1gate1 : MonoBehaviour
+public class Stage1gate : MonoBehaviour
 {
     [SerializeField] Transform overlapPos;
     [SerializeField] LayerMask teleportLayer;

@@ -6630,7 +6630,6 @@ GameObject:
   m_Component:
   - component: {fileID: 582921997}
   - component: {fileID: 582921996}
-  - component: {fileID: 582921998}
   - component: {fileID: 582921999}
   m_Layer: 0
   m_Name: Stage2gate2
@@ -6680,22 +6679,6 @@ Transform:
   m_Father: {fileID: 4930316}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &582921998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582921994}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81a7adedfd771d9439992e53c067ab29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlapPos: {fileID: 582921997}
-  stageLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &582921999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18570,7 +18553,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1313151322}
   - component: {fileID: 1313151321}
-  - component: {fileID: 1313151323}
   - component: {fileID: 1313151324}
   m_Layer: 0
   m_Name: Stage2gate1
@@ -18620,22 +18602,6 @@ Transform:
   m_Father: {fileID: 4930316}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1313151323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313151320}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f48940694593014a8df6d126474cd70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overlapPos: {fileID: 1313151322}
-  stageLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &1313151324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21602,7 +21568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1646110628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21615,7 +21581,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 830ea806aa3814d48b670e55c0875321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stage2StartGate: {fileID: 6119780848867271320}
   particleFactory: {fileID: 6248122510326095875, guid: 833ad7fb2880cdc4ca6e2f3988c80767, type: 3}
   logInPlatform: {fileID: 1176817963}
 --- !u!4 &1646110629
@@ -28680,7 +28645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3421025589598730227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.07, y: 10.6, z: 0}
+  m_LocalPosition: {x: 4.8, y: 11.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42101,6 +42066,7 @@ GameObject:
   - component: {fileID: 6119780848867271334}
   - component: {fileID: 6119780848867271335}
   - component: {fileID: 6119780848867271331}
+  - component: {fileID: 6119780848867271336}
   m_Layer: 0
   m_Name: Gate
   m_TagString: Untagged
@@ -42223,6 +42189,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6119780848867271336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6119780848867271320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 830ea806aa3814d48b670e55c0875321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleFactory: {fileID: 6248122510326095875, guid: 833ad7fb2880cdc4ca6e2f3988c80767, type: 3}
+  logInPlatform: {fileID: 1176817963}
 --- !u!4 &6592564779241053437
 Transform:
   m_ObjectHideFlags: 0

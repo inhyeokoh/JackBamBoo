@@ -11,10 +11,8 @@ public class PlayerMove : MonoBehaviour
     private Animator ani;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private GameObject gmObject;
     private AudioSource jumpSound;
     private FixedJoint2D fixJoint;
-    GameManager gm;
 
     public Transform groundCheck;
     public LayerMask GroundLayer;
@@ -52,8 +50,6 @@ public class PlayerMove : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         jumpSound = GetComponent<AudioSource>();
         fixJoint = GetComponent<FixedJoint2D>();
-        gmObject = GameObject.Find("GameManager");
-        gm = gmObject.GetComponent<GameManager>();
     }
 
     private void Update()
@@ -140,9 +136,14 @@ public class PlayerMove : MonoBehaviour
             jumpPower = 10f;
             rb.velocity = Vector2.up * jumpPower;
         }
+        else if (collision.gameObject.CompareTag("Life") && GameManager.Instance.life <= 4)
+        {
+            GameManager.Instance.life++;
+            collision.gameObject.SetActive(false);
+        }
         else if (collision.gameObject.CompareTag("Dead"))
         {
-            gm.Revive();
+            GameManager.Instance.Revive();
         }
     }
 
@@ -171,7 +172,7 @@ public class PlayerMove : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Dead"))
         {
-            gm.Revive();
+            GameManager.Instance.Revive();
         }
 
         // 구름과 새에서 자식 오브젝트로 만들었다가 풀어줄 때 DontDestroyOnLoad가 풀리는데, 게이트에 도달하면 재설정해주는 코드

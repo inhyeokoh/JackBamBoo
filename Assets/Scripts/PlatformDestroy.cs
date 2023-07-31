@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class PlatformDestroy : MonoBehaviour
 {
+    [SerializeField] float getInactive;
+    [SerializeField] float getActive;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Invoke("SetFalse", 0.7f);
+            Invoke("InActive", getInactive);
         }
     }
 
-    private void SetFalse()
+    private void InActive()
     {
         gameObject.SetActive(false);
-        Invoke("SetTrue", 2f);
+        Invoke("Active", getActive);
     }
-    private void SetTrue()
+    private void Active()
     {
         gameObject.SetActive(true);
     }
-
-
 }

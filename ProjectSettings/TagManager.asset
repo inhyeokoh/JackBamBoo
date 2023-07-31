@@ -12,6 +12,7 @@ TagManager:
   - Rope
   - Gate
   - Fruit
+  - Life
   layers:
   - Default
   - TransparentFX

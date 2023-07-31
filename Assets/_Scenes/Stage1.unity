@@ -169,6 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &35327224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3442,6 +3444,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &287761057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4073,6 +4077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1 &457512599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,6 +4781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!4 &658173876 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4242021509740848, guid: ffd3c094641fc694c994e145d92c86da, type: 3}
@@ -5171,6 +5179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1 &719094875
 GameObject:
   m_ObjectHideFlags: 0
@@ -6191,22 +6201,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c55844118ecab5439886298155b89ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restart: 0
-  timeCount: 0
   player: {fileID: 5122355760525795539}
   UIcanvas: {fileID: 746157862}
   notification: {fileID: 1747459707}
   closeBtn: {fileID: 7892734326880418011}
   gameOverImg: {fileID: 1557276575}
+  st1gate: {fileID: 0}
+  volumeSlider: {fileID: 1149549874}
   lives:
   - {fileID: 449099718}
   - {fileID: 216249404}
   - {fileID: 810646883}
   - {fileID: 2044510213}
   - {fileID: 839616996}
+  life: 5
+  timeCount: 0
+  restart: 0
+  visitStage: 0
   frontDoor: 0
-  smokestack: 0
-  volumeSlider: {fileID: 1149549874}
+  smokeStack: 0
 --- !u!4 &873720143
 Transform:
   m_ObjectHideFlags: 0
@@ -7851,6 +7864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &1147270343
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8580,6 +8595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1 &1297938476
 GameObject:
   m_ObjectHideFlags: 0
@@ -9457,6 +9474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &1450076117
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9813,6 +9832,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1 &1461220020
 GameObject:
   m_ObjectHideFlags: 0
@@ -10006,6 +10027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &1462521077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10098,7 +10121,7 @@ GameObject:
   - component: {fileID: 1477320291}
   - component: {fileID: 1477320292}
   m_Layer: 0
-  m_Name: Stage1gate1
+  m_Name: Stage1gate
   m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10913,6 +10936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!61 &1568578447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13881,6 +13906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1001 &2072158670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14446,6 +14473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ebebe5792c98848b7a336e77413f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getInactive: 0.7
+  getActive: 2
 --- !u!1 &2115830869
 GameObject:
   m_ObjectHideFlags: 0

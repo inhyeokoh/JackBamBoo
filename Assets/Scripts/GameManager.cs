@@ -9,30 +9,25 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public bool restart;
-
-    int life = 5;
-    public float timeCount = 0;
 
     [SerializeField] GameObject player;
     [SerializeField] GameObject UIcanvas;
     [SerializeField] GameObject notification;
     [SerializeField] GameObject closeBtn;
     [SerializeField] GameObject gameOverImg;
-
-    Stage1gate1 st1g1;
-    Stage2gate1 st2g1;
-    Stage2gate2 st2g2;
-    Stage3gate1 st3g1;
-    Stage3gate2 st3g2;
-    Transform beginPos;
-
+    [SerializeField] Stage1gate st1gate;
+    [SerializeField] Slider volumeSlider;
     [SerializeField] Image[] lives = new Image[5];
 
-    public bool frontDoor;
-    public bool smokestack;
+    Transform beginPos;
 
-    [SerializeField] Slider volumeSlider;
+    public int life = 5;
+    public float timeCount = 0;
+    public bool restart;
+    public bool visitStage;
+    public bool frontDoor;
+    public bool smokeStack;
+
 
     private void Awake()
     {
@@ -44,7 +39,6 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        // 60프레임으로 고정
         Application.targetFrameRate = 60;
     }
 
@@ -77,50 +71,35 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    // 씬이 로드될 때 마다 실행하는 메서드
+    // 씬이 로드될 때마다 실행하는 메서드
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // beginpos 있으면 위치시키기
+        if (GameObject.Find("BeginPos") != null)
+        {
+            beginPos = GameObject.Find("BeginPos").transform;
+            player.transform.position = beginPos.position;
+        }
+
         if (SceneManager.GetActiveScene().name == "Menu")
         {
-            // Dontdestroy 했던것들 파괴
+            // DontDestroyOnLoad 했던것들 파괴
             Destroy(gameObject);
             Destroy(UIcanvas);
             Destroy(player);
         }
-        else if (SceneManager.GetActiveScene().name == "Stage1")
-        {
-            st1g1 = GameObject.Find("Stage1gate1").GetComponent<Stage1gate1>();
-            beginPos = GameObject.Find("BeginPos").transform;
-            player.transform.position = beginPos.position;
-        }
         else if (SceneManager.GetActiveScene().name == "Stage2")
-        {            
-            st2g1 = GameObject.Find("Stage2gate1").GetComponent<Stage2gate1>();
-            st2g2 = GameObject.Find("Stage2gate2").GetComponent<Stage2gate2>();
-            beginPos = GameObject.Find("BeginPos").transform;
+        {       
             if (frontDoor)
             {
-                GameObject.Find("Scene2Manager").SetActive(false);
+/*                GameObject.Find("Scene2Manager").SetActive(false);*/
                 player.transform.position = GameObject.Find("Stage2gate1").transform.position;
-            }
-            else
-            {
-                player.transform.position = beginPos.position;
             }
         }
         else if (SceneManager.GetActiveScene().name == "Stage3")
         {
-            st3g1 = GameObject.Find("Stage3gate1").GetComponent<Stage3gate1>();
-            st3g2 = GameObject.Find("Stage3gate2").GetComponent<Stage3gate2>();
-            beginPos = GameObject.Find("BeginPos").transform;
-            if (!smokestack)
+            if (!smokeStack)
             {
                 player.transform.position = GameObject.Find("Stage3gate1").transform.position;
-            }
-            else
-            {
-                player.transform.position = beginPos.position;
             }
         }
         else if (SceneManager.GetActiveScene().name == "Ending")
@@ -135,22 +114,16 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    // 스크립트 5개보다 게임 매니저에서 다 관리하는건 어떨까
     public void CheckDoor()
     {
-
         // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
         if (SceneManager.GetActiveScene().name == "Stage1")
-            st1g1.DoorOpen();
-        else if (SceneManager.GetActiveScene().name == "Stage2")
         {
-/*            st2g1.DoorOpen();*/
-            st2g2.DoorOpen();
+            st1gate.DoorOpen();
         }
-        else if (SceneManager.GetActiveScene().name == "Stage3")
+        else
         {
-            st3g1.DoorOpen();
-            st3g2.DoorOpen();
+            GateManager.Instance.DoorsOpen();
         }
     }
 
@@ -200,7 +173,6 @@ public class GameManager : MonoBehaviour
         notification.SetActive(true);
     }
 
-    // 일시정지 풀어주기
     public void GobackToGame()
     {
         Time.timeScale = 1;

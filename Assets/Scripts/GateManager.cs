@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GateManager : MonoBehaviour
 {
+    public static GateManager Instance;
     [SerializeField] LayerMask layerMask;
     
     GameObject Chicken;
@@ -14,9 +15,7 @@ public class GateManager : MonoBehaviour
     bool isOverlap2;
     bool petActivate;
 
-
     // 씬1은 텔레포트매니저, 씬2,3은 게이트매니저
-
     private void Start()
     {
         if (SceneManager.GetActiveScene().name == "Stage2")
@@ -35,24 +34,28 @@ public class GateManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            if (SceneManager.GetActiveScene().name == "Stage2")
-            {
-                Door1Open();
-                Door2Open();
-            }
-            else if (SceneManager.GetActiveScene().name == "Stage3")
-            {
-                Door3Open();
-                Door4Open();
-            }
+            DoorsOpen();
         }
-
     }
 
-    public void Door1Open()
+    public void DoorsOpen()
+    {
+        if (SceneManager.GetActiveScene().name == "Stage2")
+        {
+            Door1Open();
+            Door2Open();
+        }
+        else if (SceneManager.GetActiveScene().name == "Stage3")
+        {
+            Door3Open();
+            Door4Open();
+        }
+    }
+
+    private void Door1Open()
     {
         isOverlap1 = Physics2D.OverlapCircle(overlapPos1, 1f, layerMask);
-        if (!isOverlap1)
+        if (!isOverlap1 || GameManager.Instance.frontDoor)
         {
             return;
         }
@@ -63,7 +66,7 @@ public class GateManager : MonoBehaviour
         }
     }
 
-    public void Door2Open()
+    private void Door2Open()
     {
         isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, layerMask);
         if (!isOverlap2)
@@ -72,12 +75,12 @@ public class GateManager : MonoBehaviour
         }
         else
         {
-            GameManager.Instance.smokestack = true;
+            GameManager.Instance.smokeStack = true;
             SceneManager.LoadScene("Stage3");
         }
     }
 
-    public void Door3Open()
+    private void Door3Open()
     {
         isOverlap1 = Physics2D.OverlapCircle(overlapPos1, 1f, layerMask);
         if (!isOverlap1)
@@ -90,17 +93,15 @@ public class GateManager : MonoBehaviour
         }
     }
 
-    public void Door4Open()
+    private void Door4Open()
     {
         isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, layerMask);
         petActivate = Chicken.GetComponent<PetMove>().activate;
-        if (!isOverlap2|| !petActivate)
+        if (!isOverlap2 || !petActivate)
             return;
         else
         {
             SceneManager.LoadScene("Ending");
         }
     }
-
-
 }
