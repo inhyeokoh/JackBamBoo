@@ -91,7 +91,6 @@ public class GameManager : MonoBehaviour
         {       
             if (frontDoor)
             {
-/*                GameObject.Find("Scene2Manager").SetActive(false);*/
                 player.transform.position = GameObject.Find("Stage2gate1").transform.position;
             }
         }

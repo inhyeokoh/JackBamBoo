@@ -31,7 +31,6 @@ public class StageBird : MonoBehaviour
         if (startMove)
         {            
             transform.position = Vector2.MoveTowards(transform.position, destination.position, Time.deltaTime * speed);
-        }
-        
+        }        
     }
 }

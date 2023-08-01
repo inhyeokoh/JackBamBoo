@@ -13,16 +13,15 @@ public class PetMove : MonoBehaviour
 
     Rigidbody2D rb;
     Animator ani;
-    private Transform player;
-    public LayerMask groundLayer;
-    public ParticleSystem shining;
+    Transform player;
+    [SerializeField] LayerMask groundLayer;
+    [SerializeField] ParticleSystem shining;
     
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         player = GameObject.Find("Player").transform;
-        Physics2D.IgnoreLayerCollision(7, 9);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,6 +29,7 @@ public class PetMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             activate = true;
+            shining.gameObject.SetActive(false);
         }
     }
 

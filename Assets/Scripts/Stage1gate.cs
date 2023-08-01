@@ -7,7 +7,7 @@ public class Stage1gate : MonoBehaviour
 {
     [SerializeField] Transform overlapPos;
     [SerializeField] LayerMask teleportLayer;
-    [SerializeField] ParticleSystem particleFactory;
+    [SerializeField] ParticleSystem shining;
     [SerializeField] GameObject player;
     Animator ani;
     bool isOverlap;
@@ -42,8 +42,7 @@ public class Stage1gate : MonoBehaviour
         }
         else
         {
-            GameObject particle = Instantiate(particleFactory).gameObject;
-            particle.transform.position = player.transform.position;
+            shining.gameObject.SetActive(true);            
             StartCoroutine(TeleportMove(1.5f));
         }
     }
@@ -52,6 +51,7 @@ public class Stage1gate : MonoBehaviour
     {
         yield return new WaitForSeconds(delaytime);
 
+        shining.gameObject.SetActive(false);
         SceneManager.LoadScene("Stage2");
     }
 

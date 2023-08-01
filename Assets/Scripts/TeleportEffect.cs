@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TeleportEffect : MonoBehaviour
 {
-    [SerializeField] ParticleSystem particleFactory;
-    [SerializeField] GameObject logInPlatform;
+    [SerializeField] ParticleSystem shining;
+    [SerializeField] GameObject platform;
 
     Animator ani;
 
     public void Start()
-    {
+    {       
         ani = GetComponent<Animator>();
         if (!GameManager.Instance.visitStage)
         {
@@ -18,18 +18,25 @@ public class TeleportEffect : MonoBehaviour
         }
     }
 
+    // stage2 첫 도착시에만 발생하는 애니메이션
     private IEnumerator StageStartAni()
     {
         ani.SetBool("gate", true);
+
+        PlayerMove.Instance.enabled = false;
+        platform.SetActive(true);
+
         yield return new WaitForSeconds(0.5f);
 
-        GameObject particle = Instantiate(particleFactory).gameObject;
-        transform.position = particle.transform.position; 
+        shining.gameObject.SetActive(true);
 
-        yield return new WaitForSeconds(0.5f);
-        logInPlatform.SetActive(false);
+        yield return new WaitForSeconds(1f);
+
+        platform.SetActive(false);
+        shining.gameObject.SetActive(false);
         ani.SetBool("gate", false);
 
+        PlayerMove.Instance.enabled = true;
         GameManager.Instance.visitStage = true;
     }
 }

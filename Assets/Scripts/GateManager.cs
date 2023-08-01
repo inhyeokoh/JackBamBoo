@@ -8,7 +8,7 @@ public class GateManager : MonoBehaviour
     public static GateManager Instance;
     [SerializeField] LayerMask layerMask;
     
-    GameObject Chicken;
+    GameObject chicken;
     Vector3 overlapPos1;
     Vector3 overlapPos2;
     bool isOverlap1;
@@ -27,7 +27,7 @@ public class GateManager : MonoBehaviour
         {
             overlapPos1 = GameObject.Find("Stage3gate1").transform.position;
             overlapPos2 = GameObject.Find("Stage3gate2").transform.position;
-            Chicken = GameObject.Find("Chicken");
+            chicken = GameObject.Find("Chicken");
         }
     }
     private void Update()
@@ -96,7 +96,7 @@ public class GateManager : MonoBehaviour
     private void Door4Open()
     {
         isOverlap2 = Physics2D.OverlapCircle(overlapPos2, 1f, layerMask);
-        petActivate = Chicken.GetComponent<PetMove>().activate;
+        petActivate = chicken.GetComponent<PetMove>().activate;
         if (!isOverlap2 || !petActivate)
             return;
         else

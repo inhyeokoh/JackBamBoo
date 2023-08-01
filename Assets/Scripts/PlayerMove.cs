@@ -136,11 +136,6 @@ public class PlayerMove : MonoBehaviour
             jumpPower = 10f;
             rb.velocity = Vector2.up * jumpPower;
         }
-        else if (collision.gameObject.CompareTag("Life") && GameManager.Instance.life <= 4)
-        {
-            GameManager.Instance.life++;
-            collision.gameObject.SetActive(false);
-        }
         else if (collision.gameObject.CompareTag("Dead"))
         {
             GameManager.Instance.Revive();
@@ -174,11 +169,18 @@ public class PlayerMove : MonoBehaviour
         {
             GameManager.Instance.Revive();
         }
-
-        // 구름과 새에서 자식 오브젝트로 만들었다가 풀어줄 때 DontDestroyOnLoad가 풀리는데, 게이트에 도달하면 재설정해주는 코드
-        if (collision.gameObject.CompareTag("Gate"))
+        // 올라타는 새와 구름에 플레이어가 자식 오브젝트로 들어가면 DontDestroyOnLoad가 풀리는 것을 게이트에 도달하면 재설정해주는 코드
+        else if (collision.gameObject.CompareTag("Gate"))
         {
             DontDestroyOnLoad(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Life"))
+        {
+            collision.gameObject.SetActive(false);
+            if (GameManager.Instance.life <= 4)
+            {
+                GameManager.Instance.life++;
+            }
         }
     }
 

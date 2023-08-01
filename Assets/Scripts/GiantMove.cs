@@ -8,13 +8,12 @@ public class GiantMove : MonoBehaviour
     float timer;
     float changeAction = 5f;
     float jumpPower;
-    float jumpCycle;
 
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator ani;
-    public AudioSource footstepsAudio;
-    public AudioSource jumpAudio;
+    [SerializeField] AudioSource footstepsAudio;
+    [SerializeField] AudioSource jumpAudio;
 
     private void Start()
     {
@@ -26,41 +25,26 @@ public class GiantMove : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        // 5초마다 동작 변경
         if (timer > changeAction)
         {
-            // 3분의 1확률로 정지해있음
+            // 1/3확률로 정지, 2/9 확률로 뛰면서 점프, 4/9 확률로 뛰어다님. 속도와 점프 높이는 범위 내 랜덤값 부여
             if (Random.Range(0, 3) == 0)
             {
                 speed = 0f;
             }
             else
             {
-                speed = Random.Range(-4f, 4f);            
-            }
-
-            // 4에서 9사이의 수를 골라 5보다 작으면 점프
-            jumpCycle = Random.Range(4f, 9f);
-            jumpPower = Random.Range(8f, 11f);
-
-            if (timer > jumpCycle)
-            {
-                ani.SetTrigger("jump");
-                rb.velocity = Vector2.up * jumpPower;
+                speed = Random.Range(-4f, 4f);
+                if (Random.Range(0, 3) == 0)
+                {
+                    ani.SetTrigger("jump");
+                    jumpPower = Random.Range(8f, 11f);
+                    rb.velocity = Vector2.up * jumpPower;
+                }
             }
             timer = 0;
         }
 
-        if (speed < 0)
-        {
-            sr.flipX = true;
-        }
-        else
-        {
-            sr.flipX = false;        
-        }
-
-/*        ani.SetFloat("speed", speed); - 지워도 될듯*/
         transform.Translate(Vector3.right * Time.deltaTime * speed);
         ani.SetFloat("speed", Mathf.Abs(speed));
 
@@ -77,10 +61,27 @@ public class GiantMove : MonoBehaviour
         jumpAudio.Play();
     }
 
+    // 제한 범위 이탈시에 방향만 바꾸주었더니 같은 자리에서 방향을 무한으로 변경하는 잔버그가 있었음
     private void LimitGiantXpos()
     {
-        if (transform.position.x > 18.5f || transform.position.x < 2.85f)
+        /*        if (speed < 0)
+        {
+            sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;        
+        }*/
+        sr.flipX = speed < 0;
+        if (transform.position.x > 18.5f)
+        {
+            transform.position = new Vector3 (transform.position.x - 0.1f, transform.position.y, 0);
             speed = speed * -1f;
+        }
+        else if(transform.position.x < 2.85f)
+        {
+            transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y, 0);
+            speed = speed * -1f;
+        }
     }
-
 }
