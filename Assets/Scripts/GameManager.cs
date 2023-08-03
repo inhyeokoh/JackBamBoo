@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject UIcanvas;
     [SerializeField] GameObject notification;
     [SerializeField] GameObject closeBtn;
+    [SerializeField] GameObject jumpBtn;
+    [SerializeField] GameObject doorBtn;
     [SerializeField] GameObject gameOverImg;
     [SerializeField] Stage1gate st1gate;
     [SerializeField] Slider volumeSlider;
@@ -53,11 +55,11 @@ public class GameManager : MonoBehaviour
         entry_PointerDown.callback.AddListener((data) => { OnPointerDown((PointerEventData)data); });
         eventTrigger.triggers.Add(entry_PointerDown);
         timeCount = 0;
-
-        // 유니티 에디터에서는 점프와 문 버튼 비활성화(조이스틱 비활성화는 플레이어 스크립트에서 다룸)
-#if UNITY_EDITOR || UNITY_STANDALONE
-        GameObject.Find("JumpBtn").SetActive(false);
-        GameObject.Find("DoorBtn").SetActive(false);
+       
+        // 안드로이드에서는 점프와 문 버튼 활성화(조이스틱 비활성화는 플레이어 스크립트에서 다룸)
+#if UNITY_ANDROID
+        jumpBtn.SetActive(true);
+        doorBtn.SetActive(true);
 #endif
     }
 

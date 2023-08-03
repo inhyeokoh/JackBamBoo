@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class PetMove : MonoBehaviour
 {
+    [SerializeField] ParticleSystem shining;
+    [SerializeField] LayerMask groundLayer;
+    Rigidbody2D rb;
+    Animator ani;
+    Transform player;
+
     public bool activate;
     float speed = 3f;
     float distance = 1f;
     float jumpPower = 5f;
     float teleportDist = 12f;
-
-    Rigidbody2D rb;
-    Animator ani;
-    Transform player;
-    [SerializeField] LayerMask groundLayer;
-    [SerializeField] ParticleSystem shining;
     
     private void Start()
     {

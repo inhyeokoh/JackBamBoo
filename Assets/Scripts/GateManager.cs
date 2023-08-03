@@ -15,7 +15,6 @@ public class GateManager : MonoBehaviour
     bool isOverlap2;
     bool petActivate;
 
-    // 씬1은 텔레포트매니저, 씬2,3은 게이트매니저
     private void Start()
     {
         if (SceneManager.GetActiveScene().name == "Stage2")

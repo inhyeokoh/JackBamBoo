@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    private VariableJoystick joy;
     public static PlayerMove Instance;
 
-    private Animator ani;
-    private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    private AudioSource jumpSound;
-    private FixedJoint2D fixJoint;
+    [SerializeField] VariableJoystick joystick;
+    [SerializeField] AudioSource jumpSound;
+
+
+    Animator ani;
+    Rigidbody2D rb;
+    SpriteRenderer sr;
+    FixedJoint2D fixJoint;
 
     public Transform groundCheck;
     public LayerMask GroundLayer;
@@ -37,18 +39,14 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
-    // 안드로이드에서는 조이스틱을 찾아서 사용, 에디터에서는 조이스틱 비활성화
-#if UNITY_ANDROID
-        joy = GameObject.Find("VariableJoystick").GetComponent<VariableJoystick>();
-        GameObject.Find("VariableJoystick").SetActive(true);
-#elif UNITY_EDITOR || UNITY_STANDALONE
-        GameObject.Find("VariableJoystick").SetActive(false);
+        // 안드로이드에서는 조이스틱을 찾아서 사용, 에디터에서는 조이스틱 비활성화
+#if UNITY_ANDROID        
+        joystick.gameObject.SetActive(true);     
 #endif
 
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
-        jumpSound = GetComponent<AudioSource>();
+        sr = GetComponent<SpriteRenderer>(); 
         fixJoint = GetComponent<FixedJoint2D>();
     }
 
@@ -62,7 +60,7 @@ public class PlayerMove : MonoBehaviour
     {
     // xMove 변수에 안드로이드에서는 조이스틱 입력값, 에디터에서는 방향키값을 줌  
 #if UNITY_ANDROID
-        float xMove = joy.Horizontal;
+        float xMove = joystick.Horizontal;
 #elif UNITY_EDITOR || UNITY_STANDALONE
         float xMove = Input.GetAxis("Horizontal");
 #endif
@@ -79,7 +77,7 @@ public class PlayerMove : MonoBehaviour
         if (isLadder)
         {
 #if UNITY_ANDROID
-        float yMove = joy.Vertical;
+        float yMove = joystick.Vertical;
 #elif UNITY_EDITOR || UNITY_STANDALONE
         float yMove = Input.GetAxis("Vertical");
 #endif

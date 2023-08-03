@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformDestroy : MonoBehaviour
+public class PlatformInactive : MonoBehaviour
 {
     [SerializeField] float getInactive;
     [SerializeField] float getActive;
@@ -19,6 +19,7 @@ public class PlatformDestroy : MonoBehaviour
         gameObject.SetActive(false);
         Invoke("Active", getActive);
     }
+
     private void Active()
     {
         gameObject.SetActive(true);

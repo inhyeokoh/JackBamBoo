@@ -13,5 +13,4 @@ public class PlaceChickenExit : MonoBehaviour
             pet.transform.position = transform.position + new Vector3(0.7f , 0.5f ,0);
         }
     }
-
 }

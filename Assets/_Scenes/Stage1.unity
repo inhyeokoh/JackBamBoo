@@ -6206,7 +6206,7 @@ MonoBehaviour:
   notification: {fileID: 1747459707}
   closeBtn: {fileID: 7892734326880418011}
   gameOverImg: {fileID: 1557276575}
-  st1gate: {fileID: 0}
+  st1gate: {fileID: 1477320291}
   volumeSlider: {fileID: 1149549874}
   lives:
   - {fileID: 449099718}
@@ -14320,7 +14320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984437, guid: ec536a7718376554185e4a856d5ae230, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803815115470, guid: ec536a7718376554185e4a856d5ae230, type: 3}
       propertyPath: m_Sprite
@@ -14389,6 +14389,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230, type: 3}
   m_PrefabInstance: {fileID: 2099349934}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2099349936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3881087803549984439, guid: ec536a7718376554185e4a856d5ae230, type: 3}
+  m_PrefabInstance: {fileID: 2099349934}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42844a4fccbd54746b90cade4ff70f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2104675046
 GameObject:
   m_ObjectHideFlags: 0
@@ -27803,11 +27814,11 @@ GameObject:
   - component: {fileID: 5122355760525795542}
   - component: {fileID: 5122355760525795537}
   - component: {fileID: 5122355760525795536}
-  - component: {fileID: 5122355760525795540}
   - component: {fileID: 5122355760525795541}
   - component: {fileID: 1790861276}
   - component: {fileID: 751011455}
   - component: {fileID: 751011456}
+  - component: {fileID: 5122355760525795540}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -27827,6 +27838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee62a2a943870e43b3fdc90301bdd60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joystick: {fileID: 2099349936}
+  jumpSound: {fileID: 751011455}
   groundCheck: {fileID: 5122355760025434638}
   GroundLayer:
     serializedVersion: 2

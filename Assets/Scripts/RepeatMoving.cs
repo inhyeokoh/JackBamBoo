@@ -5,9 +5,9 @@ using UnityEngine;
 // 반복적으로 움직이는 구름과 새에 적용 
 public class RepeatMoving : MonoBehaviour
 {
-    [SerializeField] float speed;
     [SerializeField] Transform startPoint;
     [SerializeField] Transform endPoint;
+    [SerializeField] float speed;
     Transform destination;
     SpriteRenderer sr;
 

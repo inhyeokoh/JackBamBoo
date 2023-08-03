@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private GameObject target;
+    GameObject player;
     private float speed = 3f;
 
     public Vector2 center;
@@ -22,10 +22,10 @@ public class CameraMove : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.Find("Player");
+        player = GameObject.Find("Player");
 
         // 카메라가 비추는 영역의 가로, 세로 크기의 절반을 각각 width와 height 변수로 저장.
-        // 카메라 컴포넌트의 size 값이 애초에 중앙부터 상단까지(높이 1/2)을 의미.
+        // 카메라 컴포넌트의 size 값은 중앙부터 상단까지(높이 1/2)를 의미.
         // Screen.width, Screen.height는 해상도 가로, 세로 크기의 픽셀 값을 반환.
         height = Camera.main.orthographicSize;
         width = height * Screen.width / Screen.height;
@@ -35,12 +35,12 @@ public class CameraMove : MonoBehaviour
     {
         // Lerp(선형 보간)를 사용하여 부드러운 움직임을 표현이 가능함.
         // a에서 b까지 이동시에 t값이 클수록 빠르게 도달함.
-        transform.position = Vector3.Lerp(target.transform.position,
+        transform.position = Vector3.Lerp(player.transform.position,
                                             transform.position,
                                             Time.deltaTime * speed);
 
-        // 카메라의 중심점이 size의 절반에서 카메라가 비추는 폭의 절반만큼(width)을 빼는
-        // 범위까지만 이동하도록 제한해야 카메라가 비추는 영역이 맵을 벗어나지 않음.
+        // 카메라의 중심점이 size의 절반에서 카메라가 비추는 폭의 절반만큼(width)을 빼는 범위까지만
+        // 이동하도록 제한해야 카메라가 비추는 영역이 맵을 벗어나지 않음.
         float lx = size.x * 0.5f - width;
         float clampX = Mathf.Clamp(transform.position.x, center.x - lx, center.x + lx);
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformIgnore : MonoBehaviour
 {
-    public Collider2D platformIgnore;
+    [SerializeField] Collider2D platformIgnore;
     
     private void OnTriggerStay2D(Collider2D collision)
     {

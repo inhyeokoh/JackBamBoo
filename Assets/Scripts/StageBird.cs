@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class StageBird : MonoBehaviour
 {
+    [SerializeField] Transform destination;
     float speed = 2f;
     bool startMove; 
-    [SerializeField] Transform destination;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

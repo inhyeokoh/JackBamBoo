@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class GiantMove : MonoBehaviour
 {
+    [SerializeField] AudioSource footstepsAudio;
+    [SerializeField] AudioSource jumpAudio;
+    Rigidbody2D rb;
+    SpriteRenderer sr;
+    Animator ani;
+
     float speed;
     float timer;
     float changeAction = 5f;
     float jumpPower;
-
-    Rigidbody2D rb;
-    SpriteRenderer sr;
-    Animator ani;
-    [SerializeField] AudioSource footstepsAudio;
-    [SerializeField] AudioSource jumpAudio;
 
     private void Start()
     {
