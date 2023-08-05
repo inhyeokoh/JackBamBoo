@@ -27,7 +27,7 @@ public class GiantMove : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > changeAction)
         {
-            // 1/3확률로 정지, 2/9 확률로 뛰면서 점프, 4/9 확률로 뛰어다님. 속도와 점프 높이는 범위 내 랜덤값 부여
+            // 1/3확률로 정지, 2/9 확률로 뛰면서 점프, 4/9 확률로 뛰어다님. 속도와 점프높이는 랜덤값 부여.
             if (Random.Range(0, 3) == 0)
             {
                 speed = 0f;
@@ -44,7 +44,6 @@ public class GiantMove : MonoBehaviour
             }
             timer = 0;
         }
-
         transform.Translate(Vector3.right * Time.deltaTime * speed);
         ani.SetFloat("speed", Mathf.Abs(speed));
 
@@ -61,17 +60,10 @@ public class GiantMove : MonoBehaviour
         jumpAudio.Play();
     }
 
-    // 제한 범위 이탈시에 방향만 바꾸주었더니 같은 자리에서 방향을 무한으로 변경하는 잔버그가 있었음
+    // 제한 범위 이탈시에 방향만 바꿔주었더니 같은 자리에서 방향을 무한으로 변경하는 잔버그가 있었음.
     private void LimitGiantXpos()
     {
-        /*        if (speed < 0)
-        {
-            sr.flipX = true;
-        }
-        else
-        {
-            sr.flipX = false;        
-        }*/
+        // speed 값이 0 미만이면 true 아니면 반대.
         sr.flipX = speed < 0;
         if (transform.position.x > 18.5f)
         {

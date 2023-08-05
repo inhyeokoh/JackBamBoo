@@ -42,18 +42,19 @@ public class PetMove : MonoBehaviour
                 transform.Translate(Vector2.left * Time.deltaTime * speed);
                 ani.SetBool("isRun", true);  
 
+                // Vector3.right은 (1,0,0)으로 고정이지만 tranform.right은 local 좌표상에서의 오른쪽.
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right * -1f, 0.5f, groundLayer);
 
+                // 대각선 윗방향 (1,1) 또는 (-1,1)로 raycast를 쏨.
                 RaycastHit2D hitDiagonal = Physics2D.Raycast(transform.position, new Vector2(DirectionPet(), 1), 2f, groundLayer);
-                // 펫의 y좌표가 플레이어의 y좌표보다 높을 때 왜 초기화 하는지는 모르겠음
+                
+                // 플레이어가 펫보다 아래에 있을 때 펫 혼자서 점프지형에 올라가는것을 방지
                 if (player.position.y <= transform.position.y)
                     hitDiagonal = new RaycastHit2D();
-
-                if (hit || hitDiagonal)
+                else if (hit || hitDiagonal)
                 {
                     rb.velocity = Vector2.up * jumpPower;
                 }
-
             }  
             else
             {

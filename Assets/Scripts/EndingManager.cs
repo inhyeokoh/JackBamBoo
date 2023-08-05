@@ -13,7 +13,7 @@ public class EndingManager : MonoBehaviour
 
     private void Start()
     {
-        // 엔딩씬에 도착했을때 GameManager에서 timeScore 값을 가져와서 점수를 매김
+        // 엔딩씬에 도착했을때 GameManager에서 timeScore 값을 가져와서 점수를 연산.
         totalScore = 1000000 / (int)GameManager.Instance.timeCount;
         Invoke("AppearCanvas", 6f);
     }

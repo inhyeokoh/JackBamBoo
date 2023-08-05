@@ -10,7 +10,6 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] VariableJoystick joystick;
     [SerializeField] AudioSource jumpSound;
 
-
     Animator ani;
     Rigidbody2D rb;
     SpriteRenderer sr;
@@ -19,11 +18,11 @@ public class PlayerMove : MonoBehaviour
     public Transform groundCheck;
     public LayerMask GroundLayer;
 
-    float speed = 3f;
-    float jumpPower = 5f;
+    [SerializeField] float speed;
+    [SerializeField] float jumpPower;
     bool isGround = true;
     bool isLadder;
-    bool isRope = false;
+    bool isRope;
 
     private void Awake()
     {
@@ -53,70 +52,56 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         Move();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PlayerJump();
+        }
     }
 
 
     private void Move()
     {
-    // xMove 변수에 안드로이드에서는 조이스틱 입력값, 에디터에서는 방향키값을 줌  
+        // xMove 변수에 안드로이드에서는 조이스틱 입력값, 에디터에서는 방향키값을 줌  
 #if UNITY_ANDROID
         float xMove = joystick.Horizontal;
-#elif UNITY_EDITOR || UNITY_STANDALONE
-        float xMove = Input.GetAxis("Horizontal");
-#endif
-        // flipX를 통해 좌우 스프라이트 변경
-        rb.velocity = new Vector2(xMove * speed, rb.velocity.y);
-        if (xMove < 0)
-            sr.flipX = true;
-        else
-            sr.flipX = false;
-        ani.SetFloat("speed", Mathf.Abs(xMove));
-
-    
-        // 이해 다시 필요
-        if (isLadder)
-        {
-#if UNITY_ANDROID
         float yMove = joystick.Vertical;
 #elif UNITY_EDITOR || UNITY_STANDALONE
+        float xMove = Input.GetAxis("Horizontal");
         float yMove = Input.GetAxis("Vertical");
 #endif
+
+        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, GroundLayer);
+        ani.SetBool("ground", isGround);     
+ 
+        rb.velocity = new Vector2(xMove * speed, rb.velocity.y);
+        sr.flipX = xMove < 0;
+        ani.SetFloat("speed", Mathf.Abs(xMove));
+    
+        // 사다리에서 중력 조절
+        if (isLadder)
+        {
             rb.velocity = new Vector2(rb.velocity.x, yMove * speed);
             rb.gravityScale = 7f;
-        }        
-        else if (isRope && Input.GetKeyDown(KeyCode.Space))
-        {
-            jumpSound.Play();
-            rb.gravityScale = 1;
-            Invoke("DelayRopeJump", 0.3f);
-            fixJoint.connectedBody = null;
-            fixJoint.enabled = false;
-            rb.velocity = Vector2.up * jumpPower;
         }
         else
         {
-            rb.gravityScale = 1;
-            if (Input.GetKeyDown(KeyCode.Space) && isGround == true)
-            {
-                jumpSound.Play();
-                rb.velocity = Vector2.up * jumpPower;
-            }
+            rb.gravityScale = 1f;
         }
-        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.2f, GroundLayer);
-        ani.SetBool("ground", isGround);     
     }
 
-    // 모바일에서 점프 버튼을 누를 때 실행
     public void PlayerJump()
     {
         jumpSound.Play();
         if (isGround)
+        {
             rb.velocity = Vector2.up * jumpPower;
+        }
         else if (isRope)
         {
-            rb.gravityScale = 1;
-            // 딜레이 없이 점프 시키면 로프 내의 다른 fixedJoint 물체에 접촉해버려서 사다리 탈출이 안됨. 평시처럼 fixedJoint를 비활성화 시킴
-            Invoke("DelayRopeJump", 0.3f);
+            // 로프에서 점프를 눌렀을 때 딜레이 없이 isRope를 false로 바꿔주면
+            // 로프 내의 다른 fixedJoint 물체에 접촉해버려서 사다리 탈출이 안됨.
+            Invoke("DelayRopeState", 0.3f);
             fixJoint.connectedBody = null;
             fixJoint.enabled = false;
             rb.velocity = Vector2.up * jumpPower;
@@ -125,13 +110,11 @@ public class PlayerMove : MonoBehaviour
 
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // JumpZone 태그이고 접촉 물체와의 첫번째 충돌 지점 노말 벡터값의 y좌표가 2보다 작을 때? 이건 다시 확인 필요
-        // 점프력을 약 2배인 10으로 설정하고 자동 점프
+    { 
         if (collision.gameObject.CompareTag("JumpZone") && collision.contacts[0].normal.y < 2f)
         {
             jumpSound.Play();
-            jumpPower = 10f;
+            jumpPower *= 2;
             rb.velocity = Vector2.up * jumpPower;
         }
         else if (collision.gameObject.CompareTag("Dead"))
@@ -144,7 +127,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("JumpZone"))
         {
-            jumpPower = 5f;
+            jumpPower /= 2;
         }
     }
 
@@ -155,7 +138,7 @@ public class PlayerMove : MonoBehaviour
             isLadder = true;
             ani.SetBool("isLadder", true);
         }
-        // 로프에 안 탄 상태에서 로프에 접촉하면 플에이어의 fixedJoint 활성화
+        // 로프에 접촉하면 플레이어의 fixedJoint 활성화.
         else if (collision.CompareTag("Rope") && !isRope)
         {
             Rigidbody2D rig = collision.gameObject.GetComponent<Rigidbody2D>();
@@ -167,7 +150,8 @@ public class PlayerMove : MonoBehaviour
         {
             GameManager.Instance.Revive();
         }
-        // 올라타는 새와 구름에 플레이어가 자식 오브젝트로 들어가면 DontDestroyOnLoad가 풀리는 것을 게이트에 도달하면 재설정해주는 코드
+        // 올라타는 새와 구름에 탑승 시, 플레이어가 자식 오브젝트로 들어가는 코드가 있는데
+        // 이 때 DontDestroyOnLoad가 풀리는 것을 Stage1 종점에 있는 게이트에 도달하면 재설정해줌.
         else if (collision.gameObject.CompareTag("Gate"))
         {
             DontDestroyOnLoad(gameObject);
@@ -181,7 +165,10 @@ public class PlayerMove : MonoBehaviour
             }
         }
     }
-
+    private void DelayRopeState()
+    {
+        isRope = false;
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -191,10 +178,4 @@ public class PlayerMove : MonoBehaviour
             ani.SetBool("isLadder", false);
         }
     }
-
-    private void DelayRopeJump()
-    {
-        isRope = false;
-    }
-
 }

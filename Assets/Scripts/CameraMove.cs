@@ -5,11 +5,11 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     GameObject player;
-    private float speed = 3f;
 
-    public Vector2 center;
+    [SerializeField] Vector2 center;
     // 맵의 전체 크기
-    public Vector2 size;
+    [SerializeField] Vector2 size;
+    float speed = 3f;
     float height;
     float width;
 
@@ -24,8 +24,7 @@ public class CameraMove : MonoBehaviour
     {
         player = GameObject.Find("Player");
 
-        // 카메라가 비추는 영역의 가로, 세로 크기의 절반을 각각 width와 height 변수로 저장.
-        // 카메라 컴포넌트의 size 값은 중앙부터 상단까지(높이 1/2)를 의미.
+        // 카메라가 비추는 영역의 가로 , 세로 크기의 절반을 각각 width와 height 변수로 저장.      
         // Screen.width, Screen.height는 해상도 가로, 세로 크기의 픽셀 값을 반환.
         height = Camera.main.orthographicSize;
         width = height * Screen.width / Screen.height;
@@ -39,8 +38,8 @@ public class CameraMove : MonoBehaviour
                                             transform.position,
                                             Time.deltaTime * speed);
 
-        // 카메라의 중심점이 size의 절반에서 카메라가 비추는 폭의 절반만큼(width)을 빼는 범위까지만
-        // 이동하도록 제한해야 카메라가 비추는 영역이 맵을 벗어나지 않음.
+        // 카메라의 중심점이 size의 절반에서 카메라가 비추는 폭의 절반만큼(width)을 빼는 길이까지만
+        // 이동하도록 제한해야 카메라가 비추는 영역이 맵을 벗어나지 않음. 맵에서 카메라 사각형을 끝에 붙인다고 생각하면 편함.
         float lx = size.x * 0.5f - width;
         float clampX = Mathf.Clamp(transform.position.x, center.x - lx, center.x + lx);
 

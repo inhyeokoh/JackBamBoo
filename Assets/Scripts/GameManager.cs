@@ -47,17 +47,18 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         LoadVolume();
+        timeCount = 0;
 
+       
+        // 안드로이드에서는 점프와 문 버튼 활성화(조이스틱 비활성화는 플레이어 스크립트에서 다룸)
         // OnClick은 눌렀다 떼어야만 작동하는데 점프 버튼은 누른 즉시 실행이 필요하므로 이벤트 트리거 포인터 다운 사용
-        EventTrigger eventTrigger = GameObject.Find("JumpBtn").GetComponent<EventTrigger>();
+#if UNITY_ANDROID
+        EventTrigger eventTrigger = jumpBtn.GetComponent<EventTrigger>();
         EventTrigger.Entry entry_PointerDown = new EventTrigger.Entry();
         entry_PointerDown.eventID = EventTriggerType.PointerDown;
         entry_PointerDown.callback.AddListener((data) => { OnPointerDown((PointerEventData)data); });
         eventTrigger.triggers.Add(entry_PointerDown);
-        timeCount = 0;
-       
-        // 안드로이드에서는 점프와 문 버튼 활성화(조이스틱 비활성화는 플레이어 스크립트에서 다룸)
-#if UNITY_ANDROID
+
         jumpBtn.SetActive(true);
         doorBtn.SetActive(true);
 #endif

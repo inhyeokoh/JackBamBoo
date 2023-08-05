@@ -360,9 +360,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.3
   startPoint: {fileID: 1889896928}
   endPoint: {fileID: 169698369}
+  speed: 2.3
 --- !u!251 &49099459
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -3177,9 +3177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
   startPoint: {fileID: 2104675047}
   endPoint: {fileID: 937891601}
+  speed: 3
 --- !u!251 &243579222
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -3324,9 +3324,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.8
   startPoint: {fileID: 390853220}
   endPoint: {fileID: 468602943}
+  speed: 1.8
 --- !u!251 &275497176
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -4807,7 +4807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &659193283
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6205,6 +6205,8 @@ MonoBehaviour:
   UIcanvas: {fileID: 746157862}
   notification: {fileID: 1747459707}
   closeBtn: {fileID: 7892734326880418011}
+  jumpBtn: {fileID: 0}
+  doorBtn: {fileID: 0}
   gameOverImg: {fileID: 1557276575}
   st1gate: {fileID: 1477320291}
   volumeSlider: {fileID: 1149549874}
@@ -6644,9 +6646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.7
   startPoint: {fileID: 1060060867}
   endPoint: {fileID: 1555282436}
+  speed: 2.7
 --- !u!50 &950988896
 Rigidbody2D:
   serializedVersion: 4
@@ -7200,9 +7202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
   startPoint: {fileID: 1455115225}
   endPoint: {fileID: 168607800}
+  speed: 2
 --- !u!251 &1026089854
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -7551,9 +7553,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
   startPoint: {fileID: 899640488}
   endPoint: {fileID: 685771671}
+  speed: 1.5
 --- !u!251 &1106764551
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -7811,7 +7813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131642556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.4, y: 32.5, z: 0}
+  m_LocalPosition: {x: 2.9, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9127,9 +9129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
   startPoint: {fileID: 1488686338}
   endPoint: {fileID: 1613995390}
+  speed: 1.5
 --- !u!61 &1387047388
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9907,9 +9909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
   startPoint: {fileID: 918287643}
   endPoint: {fileID: 591826481}
+  speed: 2.5
 --- !u!251 &1461220024
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -10443,7 +10445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1524301102
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14626,8 +14628,8 @@ GameObject:
   - component: {fileID: 2129057053}
   - component: {fileID: 2129057052}
   - component: {fileID: 2129057051}
-  - component: {fileID: 2129057054}
   - component: {fileID: 2129057055}
+  - component: {fileID: 2129057054}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -26966,9 +26968,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.3
   startPoint: {fileID: 1498327897}
   endPoint: {fileID: 1443023242}
+  speed: 3.3
 --- !u!70 &1878884304899249501
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -27844,6 +27846,8 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
+  speed: 3
+  jumpPower: 5
 --- !u!95 &5122355760525795541
 Animator:
   serializedVersion: 5
@@ -28144,9 +28148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.3
   startPoint: {fileID: 1112842599}
   endPoint: {fileID: 1281859628}
+  speed: 2.3
 --- !u!70 &5999396177567923745
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -28305,9 +28309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb580174642614b43bbc8d480e54e120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.3
   startPoint: {fileID: 1269044354}
   endPoint: {fileID: 1806263229}
+  speed: 2.3
 --- !u!70 &5999396178173665049
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

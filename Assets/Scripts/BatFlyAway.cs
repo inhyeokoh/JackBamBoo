@@ -6,7 +6,8 @@ public class BatFlyAway : MonoBehaviour
 {
     Animator ani;
     AudioSource flyingAudio;
-    private bool bFlying;
+    bool isFlying;
+
     private void Start()
     {
         ani = GetComponent<Animator>();
@@ -19,14 +20,14 @@ public class BatFlyAway : MonoBehaviour
         {
             ani.SetTrigger("FlyAway");
             flyingAudio.Play();
-            bFlying = true;
+            isFlying = true;
             Destroy(gameObject, 15f);
         }
     }
 
     private void Update()
     {
-        if (bFlying)
+        if (isFlying)
         {
             transform.Translate(new Vector3(-1, 1, 0) * Time.deltaTime);
         }
