@@ -9,13 +9,9 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        if (GameObject.Find("GameManager") != null)
+        if (GameObject.Find("GameManager") != null && GameManager.Instance.restart)
         {
-            GameManager gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-            if (gameManager.restart)
-            {
-                StartGame();
-            }
+            StartGame();
         }
     }
 
