@@ -1,12 +1,12 @@
 # 잭과 대나무(Jack and the BamBoo Stalk)
-
-# Command (PC)
+### 플레이스토어 "잭과 대나무" 검색
+## Command (PC)
 
 * __좌우상하이동 : `← → ↑ ↓` 방향키 또는 `WASD` 키__
 * __점프 : `Space` 바__
 * __포탈이동 : `↑` 방향키__
 
-# Command (Android)
+## Command (Android)
 
 * __상하좌우이동 : Joystick__
 * __점프 : `점프` 버튼__
