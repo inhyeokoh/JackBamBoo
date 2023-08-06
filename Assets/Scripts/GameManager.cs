@@ -116,9 +116,9 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
+    // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
     public void CheckDoor()
     {
-        // 모바일에서 문 버튼 누르면 씬마다 존재하는 포털을 열어줌
         if (SceneManager.GetActiveScene().name == "Stage1")
         {
             st1gate.DoorOpen();

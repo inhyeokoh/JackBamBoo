@@ -3379,11 +3379,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4745219df367f6f448aa4bc5941702ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activate: 0
+  shining: {fileID: 9215613587950131375}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  shining: {fileID: 9215613587950131375}
+  activate: 0
 --- !u!1 &344195299
 GameObject:
   m_ObjectHideFlags: 0
@@ -39323,7 +39323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2283227845336789167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33, y: 13.74, z: 0}
+  m_LocalPosition: {x: 1.5, y: 13.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

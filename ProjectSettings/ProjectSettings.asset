@@ -250,7 +250,7 @@ PlayerSettings:
   AndroidTargetDevices: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "C:/Users/YONSAI/Desktop/jack/\uCD9C\uC2DC\uD30C\uC77C/user.keystore"
+  AndroidKeystoreName: "C:/Users/82109/Documents/Github Desktop/apkfiles/\uCD9C\uC2DC\uD30C\uC77C/user.keystore"
   AndroidKeyaliasName: jackkey
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0

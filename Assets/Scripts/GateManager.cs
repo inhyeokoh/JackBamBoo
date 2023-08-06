@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// 객체지향적으로 재설계 예정.
 public class GateManager : MonoBehaviour
 {
     public static GateManager Instance;
